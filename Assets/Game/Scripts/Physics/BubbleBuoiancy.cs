@@ -9,10 +9,10 @@ public class BubbleBuoiancy : MonoBehaviour
     [SerializeField] float waterDensity = 1f;
     [SerializeField] float waveFrequency = 0.5f;
     [SerializeField] float waveAmplitude = 0.2f;
+    [SerializeField] float r = 1;
 
     private void FixedUpdate()
     {
-        float r = transform.localScale.x / 2;
         float y = transform.position.y;
         float low = y - r;
         float high = y + r;
