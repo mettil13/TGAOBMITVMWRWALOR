@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fa606019e88ccf342bd48375c58facd5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -232,9 +232,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7159810537370147019}
   - {fileID: 4748847207210597850}
   - {fileID: 194720869917015672}
+  - {fileID: 7159810537370147019}
   - {fileID: 5948852996725495711}
   m_Father: {fileID: 1371617031190343711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 1371617031190343711}
   - component: {fileID: 8285607901926310517}
   m_Layer: 0
-  m_Name: Element
+  m_Name: ElementTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
