@@ -12,7 +12,7 @@ namespace proceduralGeneration
         [SerializeField] private BoxCollider playerTrigger;
         [SerializeField] private GeneratedElementTrigger trigger;
 
-        [SerializeField] public Transform[] pathPoints;
+        
 
         private void Awake()
         {
@@ -21,31 +21,32 @@ namespace proceduralGeneration
         public void CustomUpdate()
         {
             // custom update
-            BubbleBuoiancy bubble = RiverGeneration.instance.playerBuoiancy;
-            
-            byte nearestPointIndex = 0;
-            Transform nearestPoint = pathPoints[nearestPointIndex];
-            float minDistance = Vector3.Distance(nearestPoint.position, bubble.transform.position);
+            //BubbleBuoiancy bubble = RiverGeneration.instance.playerBuoiancy;
 
-            byte c = 0;
-            while (c < pathPoints.Length)
-            {
-                float currentDistance = Vector3.Distance(pathPoints[c].position, bubble.transform.position);
-                if (currentDistance < minDistance)
-                {
-                    minDistance = currentDistance;
-                    nearestPointIndex = c;
-                    nearestPoint = pathPoints[nearestPointIndex];
-                }
-                c++;
-            }
 
-            RiverGeneration.instance.playerNearestPoint = pathPoints[nearestPointIndex];
+            //byte nearestPointIndex = 0;
+            //float minDistance =
+            //    Vector3.Distance(pathPoints[nearestPointIndex].transform.position, bubble.transform.position);
 
-            if (c < pathPoints.Length - 1)
-            {
-                bubble.flowDirection = pathPoints[c + 1].position - pathPoints[c].position;
-            }
+            //byte c = 0;
+            //while (c < pathPoints.Length)
+            //{
+            //    float currentDistance = Vector3.Distance(pathPoints[c].position, bubble.transform.position);
+            //    if (currentDistance < minDistance)
+            //    {
+            //        minDistance = currentDistance;
+            //        nearestPointIndex = c;
+            //    }
+            //    c++;
+            //}
+            //Debug.LogError("E' entrato nearest " + pathPoints[nearestPointIndex].name + " , " + pathPoints[nearestPointIndex].transform.position);
+
+            //RiverGeneration.instance.playerNearestPoint = pathPoints[nearestPointIndex];
+
+            //if (nearestPointIndex < pathPoints.Length - 1)
+            //{
+            //    bubble.flowDirection = pathPoints[nearestPointIndex + 1].position - pathPoints[nearestPointIndex].position;
+            //}
         }
     }
 }

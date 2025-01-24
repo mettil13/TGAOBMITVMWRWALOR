@@ -35,6 +35,7 @@ namespace proceduralGeneration
         [SerializeField] private float timeToCheckElementToRemove = 0.5f;
         [SerializeField] private float timeToRemovePreviousElement = 3f;
         [SerializeField] public GeneratedElement playerPosition;
+        [SerializeField] public GeneratedElementTriggerForPivots lastTrigger;
         [SerializeField] public Transform playerNearestPoint;
         //PlayerInputController
         //PlayerDatas
@@ -70,6 +71,10 @@ namespace proceduralGeneration
             if (playerPosition != null)
             {
                 playerPosition.CustomUpdate();
+            }
+            if (lastTrigger != null)
+            {
+                lastTrigger.CustomUpdate();
             }
         }
         public void GenerateNextElement()

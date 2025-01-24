@@ -53,13 +53,13 @@ MonoBehaviour:
   playerInput: {fileID: 0}
   playerDatas: {fileID: 0}
   generatedElements: []
-  riverContainer: {fileID: 0}
+  riverContainer: {fileID: 2331767758325398469}
   minNumberOfElementGenerated: 3
   maxNumberOfElementGenerated: 6
   timeToCheckElementToRemove: 0.2
   timeToRemovePreviousElement: 1
   playerPosition: {fileID: 0}
-  playerBubble: {fileID: 0}
+  playerNearestPoint: {fileID: 0}
 --- !u!1 &8868417961025092547
 GameObject:
   m_ObjectHideFlags: 0

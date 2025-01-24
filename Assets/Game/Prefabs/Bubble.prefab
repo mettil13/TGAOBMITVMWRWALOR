@@ -2652,7 +2652,7 @@ MonoBehaviour:
   waveAmplitude: 0.05
   r: 1.7
   flowIntensity: 500
-  flowDirection: {x: 1, y: 0, z: 0}
+  flowDirection: {x: 0, y: 0, z: 1}
 --- !u!114 &9220161579762884231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2713,7 +2713,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePercentage: 0
-  bodyParts: []
   PercentageIsRight: 1
 --- !u!1 &7067377189534389321
 GameObject:
