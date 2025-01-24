@@ -11,19 +11,31 @@ public class PlayerInputController : MonoBehaviour
 
     public UnityEvent quitPressed = new UnityEvent();
     private Rigidbody rb;
+    private BubbleBuoiancy bubbleBuoiancy;
 
     private void Start() {
         rb = GetComponent<Rigidbody>();
+        bubbleBuoiancy = GetComponent<BubbleBuoiancy>();
     }
 
+    private float cachedVertical = 0;
     public void OnVertical(InputValue value) {
-        Debug.Log("Vertical " + value.Get<float>());
-        rb.AddForce(new Vector3(value.Get<float>() * verticalMagnitude, 0, 0));
+        //Debug.Log("Vertical " + value.Get<float>());
+        cachedVertical = value.Get<float>();
     }
 
+    private float cachedHorizontal = 0;
     public void OnHorizontal(InputValue value) {
-        Debug.Log("Horizontal " + value.Get<float>());
-        rb.AddForce(new Vector3(value.Get<float>() * horizontalMagnitude, 0, 0));
+        //Debug.Log("Horizontal " + value.Get<float>());
+        cachedHorizontal = value.Get<float>();
+    }
+
+    public void Update() {
+        Vector3 force = new Vector3(cachedHorizontal * horizontalMagnitude, 0, cachedVertical * verticalMagnitude); // force to apply if the flow direction is forward
+        Quaternion rotation = Quaternion.FromToRotation(Vector3.forward, bubbleBuoiancy.flowDirection.normalized); // rotation between forward and the actual flow direction
+        Vector3 forceInFlowDirection = rotation * force;
+
+        rb.AddForce(forceInFlowDirection);
     }
 
     public void OnQuit() {
