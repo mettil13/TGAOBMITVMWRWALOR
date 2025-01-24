@@ -28,6 +28,7 @@ namespace proceduralGeneration
         [SerializeField] private float timeToCheckElementToRemove = 0.5f;
         [SerializeField] private float timeToRemovePreviousElement = 3f;
         [SerializeField] private GeneratedElement playerPosition;
+        [SerializeField] public BubbleBuoiancy playerBubble;
 
         public GeneratedElement lastElement => generatedElements[0];
         public GeneratedElement lastInsertedElement => generatedElements[generatedElements.Count - 1];
@@ -46,6 +47,11 @@ namespace proceduralGeneration
                 timeCounterToCheckElementToRemove = 0;
                 if (generatedElements.Count <= minNumberOfElementGenerated) GenerateNextElement();
                 if (playerPosition != generatedElements[0]) StartCoroutine(RemoveElementBeforePlayer(generatedElements[0]));
+            }
+
+            if (playerPosition != null)
+            {
+                playerPosition.CustomUpdate();
             }
         }
         public void GenerateNextElement()
