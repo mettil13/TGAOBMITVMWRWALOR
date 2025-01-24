@@ -18,7 +18,7 @@ public class RagdollDamageCollider : MonoBehaviour
 
 
     private void Start() {
-        StartCoroutine(SetImmunity(1f));
+        StartCoroutine(SetImmunity(1.5f));
     }
     void Update()
     {
@@ -30,6 +30,8 @@ public class RagdollDamageCollider : MonoBehaviour
         if (collision.gameObject.layer == 3) return;
         StartCoroutine(SetImmunity(.3f));
 
+        //provare entrambi i metodi e scegliere il migliore
+        //float impulse = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z);
         float impulse = Mathf.Abs(collision.impulse.x) + Mathf.Abs(collision.impulse.y) + Mathf.Abs(collision.impulse.z);
         if (impulse <= 0f) return; //Da decidere la soglia via testing
         impulseProva = impulse; //Da togliere dopo testing
@@ -51,7 +53,7 @@ public class RagdollDamageCollider : MonoBehaviour
                 (f) => renderer.material.SetFloat("_DamageColorPercentage", f)
                 ).SetEase(Ease.InOutQuad);
 
-            Tweener ToColor = DOVirtual.Float(1f, _damagePercentage, 1f,
+            Tweener ToColor = DOVirtual.Float(1f, _damagePercentage, 0.5f,
                 (f) => renderer.material.SetFloat("_DamageColorPercentage", f)
                 ).SetEase(Ease.InOutQuad);
 
