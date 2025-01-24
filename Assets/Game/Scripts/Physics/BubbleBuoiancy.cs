@@ -7,37 +7,39 @@ public class BubbleBuoiancy : MonoBehaviour
     [SerializeField] Rigidbody rb;
     [SerializeField] float waterHeight;
     [SerializeField] float waterDensity = 1f;
+    [SerializeField] float waveFrequency = 0.5f;
+    [SerializeField] float waveAmplitude = 0.2f;
+    [SerializeField] float r = 1;
 
     private void FixedUpdate()
     {
-        float r = transform.localScale.x / 2;
         float y = transform.position.y;
         float low = y - r;
         float high = y + r;
         float v = 0f;
         float A = 0f;
+        float waterHeightWaved = waterHeight + (waveAmplitude * Mathf.Sin(Time.time * waveFrequency));
 
-
-        if (low < waterHeight) 
+        if (low < waterHeightWaved) 
         {
-            if (y > waterHeight)
+            if (y > waterHeightWaved)
             {
-                float h = waterHeight - low;
+                float h = waterHeightWaved - low;
                 v = CapVolume(h, r);
                 A = AreaCrossSection(r, h);
 
             }
             else
             {
-                if (high > waterHeight)
+                if (high > waterHeightWaved)
                 {
-                    float h = high - waterHeight;
+                    float h = high - waterHeightWaved;
                     v =  (4f / 3f * Mathf.PI * r * r * r) - CapVolume(h, r);
                     A = AreaCrossSection(r, h);
                 }
                 else
                 {
-                    A = AreaCrossSection(r, r);
+                    A = Mathf.PI * r * r;
                     v = (4f / 3f * Mathf.PI * r * r * r);
                 }
             }
@@ -59,7 +61,7 @@ public class BubbleBuoiancy : MonoBehaviour
 
     Vector3 Drag(float p, Vector3 v, float A)
     {
-        return - 1f / 2f * p * A * v.magnitude * v;
+        return - 1f / 2f * p * A  * v;
     }
 
     float CapVolume (float h, float r)
