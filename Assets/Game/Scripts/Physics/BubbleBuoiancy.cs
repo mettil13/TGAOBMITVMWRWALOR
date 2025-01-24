@@ -1,0 +1,70 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BubbleBuoiancy : MonoBehaviour
+{
+    [SerializeField] Rigidbody rb;
+    [SerializeField] float waterHeight;
+    [SerializeField] float waterDensity = 1f;
+
+    private void FixedUpdate()
+    {
+        float r = transform.localScale.x / 2;
+        float y = transform.position.y;
+        float low = y - r;
+        float high = y + r;
+        float v = 0f;
+        float A = 0f;
+
+
+        if (low < waterHeight) 
+        {
+            if (y > waterHeight)
+            {
+                float h = waterHeight - low;
+                v = CapVolume(h, r);
+                A = AreaCrossSection(r, h);
+
+            }
+            else
+            {
+                if (high > waterHeight)
+                {
+                    float h = high - waterHeight;
+                    v =  (4f / 3f * Mathf.PI * r * r * r) - CapVolume(h, r);
+                    A = AreaCrossSection(r, h);
+                }
+                else
+                {
+                    A = AreaCrossSection(r, r);
+                    v = (4f / 3f * Mathf.PI * r * r * r);
+                }
+            }
+        }
+
+        Vector3 drag = Drag(waterDensity, rb.velocity, A);
+
+        Debug.Log(drag);
+
+        float force = v * waterDensity * - Physics.gravity.y;
+
+        rb.AddForce(Vector3.up * force + drag, ForceMode.Force);
+    }
+
+    float AreaCrossSection(float r, float h)
+    {
+        return Mathf.PI * h * (2f * r - h);
+    }
+
+    Vector3 Drag(float p, Vector3 v, float A)
+    {
+        return - 1f / 2f * p * A * v.magnitude * v;
+    }
+
+    float CapVolume (float h, float r)
+    {
+        h = Mathf.Abs(h);
+        return 1f/3f * Mathf.PI* h * h * (3f / 2f * r - h);
+    }
+}
