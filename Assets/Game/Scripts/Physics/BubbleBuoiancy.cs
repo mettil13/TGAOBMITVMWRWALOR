@@ -51,7 +51,7 @@ public class BubbleBuoiancy : MonoBehaviour
 
         Vector3 drag = Drag(waterDensity, rb.velocity, A);
 
-        Debug.Log(drag);
+        //Debug.Log(drag);
 
         float force = v * waterDensity * - Physics.gravity.y;
 
