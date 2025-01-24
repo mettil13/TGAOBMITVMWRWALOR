@@ -35,6 +35,7 @@ namespace proceduralGeneration
         [SerializeField] private float timeToCheckElementToRemove = 0.5f;
         [SerializeField] private float timeToRemovePreviousElement = 3f;
         [SerializeField] public GeneratedElement playerPosition;
+        [SerializeField] public Transform playerNearestPoint;
         //PlayerInputController
         //PlayerDatas
 

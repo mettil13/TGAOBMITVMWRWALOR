@@ -40,6 +40,8 @@ namespace proceduralGeneration
                 c++;
             }
 
+            RiverGeneration.instance.playerNearestPoint = pathPoints[nearestPointIndex];
+
             if (c < pathPoints.Length - 1)
             {
                 bubble.flowDirection = pathPoints[c + 1].position - pathPoints[c].position;
