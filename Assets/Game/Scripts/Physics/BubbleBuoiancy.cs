@@ -13,7 +13,7 @@ public class BubbleBuoiancy : MonoBehaviour
     [SerializeField] float r = 1;
 
     public float flowIntensity;
-    [NonSerialized] public Vector3 flowDirection = Vector3.forward;
+    [SerializeField] public Vector3 flowDirection = Vector3.forward;
 
     private void FixedUpdate()
     {

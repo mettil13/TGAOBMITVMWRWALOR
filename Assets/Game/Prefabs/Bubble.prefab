@@ -2651,6 +2651,7 @@ MonoBehaviour:
   waveAmplitude: 0.05
   r: 1.7
   flowIntensity: 500
+  flowDirection: {x: 1, y: 0, z: 0}
 --- !u!114 &9220161579762884231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2693,6 +2694,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e834c204a6188428f3682305777e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalMagnitude: 1
+  horizontalMagnitude: 1
+  quitPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7067377189534389321
 GameObject:
   m_ObjectHideFlags: 0

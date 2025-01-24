@@ -56,9 +56,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c758911e89e88b547b5e3d39b912a49b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6162664101950048987}
     - targetCorrespondingSourceObject: {fileID: 1082271958561512970, guid: c758911e89e88b547b5e3d39b912a49b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 417785800750921492}
@@ -1145,26 +1142,6 @@ SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8589707592822074671, guid: c758911e89e88b547b5e3d39b912a49b, type: 3}
   m_PrefabInstance: {fileID: 5802754122529076935}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6649265716955073430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c758911e89e88b547b5e3d39b912a49b, type: 3}
-  m_PrefabInstance: {fileID: 5802754122529076935}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6162664101950048987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649265716955073430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c502404d8a53640855771d6ee9eb89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damagePercentage: 0
-  bodyParts: []
-  PercentageIsRight: 1
 --- !u!137 &6749717210980647339 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8274143668834601108, guid: c758911e89e88b547b5e3d39b912a49b, type: 3}

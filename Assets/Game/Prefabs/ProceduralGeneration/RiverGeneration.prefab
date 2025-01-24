@@ -47,6 +47,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementsToGenerate:
   - prefab: {fileID: 8285607901926310517, guid: 22f31ba2a67a053479d1c37a185acda2, type: 3}
+  playerPref: {fileID: 6875212418781688385, guid: 4a0294dedb2d5d146912183ccf20c492, type: 3}
+  playerObj: {fileID: 0}
+  playerBuoiancy: {fileID: 0}
+  playerInput: {fileID: 0}
+  playerDatas: {fileID: 0}
   generatedElements: []
   riverContainer: {fileID: 0}
   minNumberOfElementGenerated: 3

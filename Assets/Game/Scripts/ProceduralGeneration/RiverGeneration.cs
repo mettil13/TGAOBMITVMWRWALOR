@@ -13,8 +13,15 @@ namespace proceduralGeneration
             [SerializeField] public GeneratedElement prefab;
         }
 
+        [Header("Generation prefs")]
         [SerializeField] private List<ElementToGenerate> elementsToGenerate;
+        [SerializeField] private GameObject playerPref;
 
+        [Header("Element generated")]
+        [SerializeField] public GameObject playerObj;
+        [SerializeField] public BubbleBuoiancy playerBuoiancy;
+        [SerializeField] public PlayerInputController playerInput;
+        [SerializeField] public PlayerDatas playerDatas;
         // first inserted = 0,
         // second inserted = 1,
         // latest inserted = last,
@@ -27,8 +34,9 @@ namespace proceduralGeneration
         [SerializeField] private byte maxNumberOfElementGenerated = 6;
         [SerializeField] private float timeToCheckElementToRemove = 0.5f;
         [SerializeField] private float timeToRemovePreviousElement = 3f;
-        [SerializeField] private GeneratedElement playerPosition;
-        [SerializeField] public BubbleBuoiancy playerBubble;
+        [SerializeField] public GeneratedElement playerPosition;
+        //PlayerInputController
+        //PlayerDatas
 
         public GeneratedElement lastElement => generatedElements[0];
         public GeneratedElement lastInsertedElement => generatedElements[generatedElements.Count - 1];
@@ -38,6 +46,15 @@ namespace proceduralGeneration
         private void Awake()
         {
             instance = this;
+            GenerateNextElement();
+
+            // generate player
+
+            playerObj = GameObject.Instantiate(playerPref);
+            playerBuoiancy = playerObj.GetComponent<BubbleBuoiancy>();
+            playerInput = playerObj.GetComponent<PlayerInputController>();
+            playerDatas = playerObj.GetComponent<PlayerDatas>();
+            playerObj.transform.position = Vector3.zero + Vector3.up * 10;
         }
         private void Update()
         {
