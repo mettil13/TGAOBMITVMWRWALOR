@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,9 @@ public class BubbleBuoiancy : MonoBehaviour
     [SerializeField] float waveFrequency = 0.5f;
     [SerializeField] float waveAmplitude = 0.2f;
     [SerializeField] float r = 1;
+
+    public float flowIntensity;
+    [NonSerialized] public Vector3 flowDirection = Vector3.forward;
 
     private void FixedUpdate()
     {
@@ -51,7 +55,7 @@ public class BubbleBuoiancy : MonoBehaviour
 
         float force = v * waterDensity * - Physics.gravity.y;
 
-        rb.AddForce(Vector3.up * force + drag, ForceMode.Force);
+        rb.AddForce(Vector3.up * force + drag + flowDirection * flowIntensity * A, ForceMode.Force);
     }
 
     float AreaCrossSection(float r, float h)
