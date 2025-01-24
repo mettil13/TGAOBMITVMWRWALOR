@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerDatas : MonoBehaviour
 {
+    List<RagdollDamageCollider> bodyParts = new List<RagdollDamageCollider>();
+
     [SerializeField] float damagePercentage = 0;
-    public List<RagdollDamageCollider> bodyParts = new List<RagdollDamageCollider>();
     private float convertedParts = 0;
 
     public bool PercentageIsRight = true;
@@ -13,8 +15,10 @@ public class PlayerDatas : MonoBehaviour
 
     void Start()
     {
+        bodyParts = GetComponentsInChildren<RagdollDamageCollider>().ToList<RagdollDamageCollider>();
         foreach(var part in bodyParts) {
             convertedParts += part.Importance;
+            part.playerDatas = this;
         }
     }
 

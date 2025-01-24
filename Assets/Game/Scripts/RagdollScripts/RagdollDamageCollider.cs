@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -5,23 +6,18 @@ using UnityEngine;
 
 public class RagdollDamageCollider : MonoBehaviour
 {
-    [SerializeField] PlayerDatas playerDatas;
-    //[SerializeField] Collider colliderBodyPart;
+    public PlayerDatas playerDatas;
     [SerializeField] List<SkinnedMeshRenderer> meshRenderers = new List<SkinnedMeshRenderer>();
     [SerializeField] float damagePercentage = 0;
     public float importance = 1;
+
 
     public float DamagePercentage => damagePercentage;
     public float Importance => importance;
 
     [SerializeField] float impulseProva;
 
-    void Awake()
-    {
-        playerDatas = GetComponentInParent<PlayerDatas>();
-        playerDatas.bodyParts.Add(this);
-        //colliderBodyPart = GetComponent<Collider>();
-    }
+
 
     void Update()
     {
@@ -43,10 +39,11 @@ public class RagdollDamageCollider : MonoBehaviour
 
     private IEnumerator TurnRed(float _damagePercentage) {
 
-        //Coroutine per cambiare il colore del materiale da damagepercentage a 100, e poi fino a newDamagePercentage
-        //foreach (var renderer in meshRenderers) {
-        //    renderer.material.color = Color.red; //lo facciamo bene quando è pronto il materiale
+        //foreach (SkinnedMeshRenderer renderer in meshRenderers) {
+        //    Tweener ToRed = DOVirtual.Float(0f, 1f, 2f, SetValue).SetEase(Ease.InOutQuad);
+        //    renderer.material.GetFloat()
         //}
+
         yield return null;
     }
 }
