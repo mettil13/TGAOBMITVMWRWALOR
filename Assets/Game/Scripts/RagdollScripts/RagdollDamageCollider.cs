@@ -18,7 +18,7 @@ public class RagdollDamageCollider : MonoBehaviour
 
 
     private void Start() {
-        StartCoroutine(SetImmunity(2f));
+        StartCoroutine(SetImmunity(1f));
     }
     void Update()
     {
@@ -27,6 +27,7 @@ public class RagdollDamageCollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) {
         if (isImmune) return;
+        if (collision.gameObject.layer == 3) return;
         StartCoroutine(SetImmunity(.3f));
 
         float impulse = Mathf.Abs(collision.impulse.x) + Mathf.Abs(collision.impulse.y) + Mathf.Abs(collision.impulse.z);
