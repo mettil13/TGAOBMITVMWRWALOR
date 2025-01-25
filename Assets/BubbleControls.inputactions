@@ -151,9 +151,45 @@
             "id": "a7d22cc1-3905-4c4b-8684-071f7b09f87e",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Up",
                     "type": "Button",
                     "id": "3579d974-02bf-434e-8097-e2248d95b489",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Down",
+                    "type": "Button",
+                    "id": "a568e8f4-cd9e-4f91-8841-a29e5b79354b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "a18c13fe-89e2-4844-a53a-fc7266ced09b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Confirm",
+                    "type": "Button",
+                    "id": "a9819172-2afc-4876-844b-40ff9fa16b2a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "8161f226-2ca2-4023-878d-c10efad8dd22",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -164,11 +200,55 @@
                 {
                     "name": "",
                     "id": "f0984635-4ba4-4fec-8396-f6fcf8e28dad",
-                    "path": "",
+                    "path": "<XInputController>/leftStick/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "New action",
+                    "groups": "Gamepad",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e3fa315-f206-4aa3-9c9a-1167a1681a47",
+                    "path": "<XInputController>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b7b851d-f3b1-43bd-852e-04980fdbc8a8",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a55827c-bdb5-40f5-9256-23dd0564400b",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1ba32ab-98ba-475c-b47c-b8249ca668d3",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
