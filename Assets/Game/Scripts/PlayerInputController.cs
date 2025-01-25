@@ -9,7 +9,11 @@ public class PlayerInputController : MonoBehaviour
     public float verticalMagnitude = 1;
     public float horizontalMagnitude = 1;
 
+    public UnityEvent<float> verticalChanged = new UnityEvent<float>();
+    public UnityEvent<float> horizontalChanged = new UnityEvent<float>();
     public UnityEvent quitPressed = new UnityEvent();
+    public UnityEvent applyPressed = new UnityEvent();
+    public UnityEvent backPressed = new UnityEvent();
     private Rigidbody rb;
     private BubbleBuoiancy bubbleBuoiancy;
     //RiverGeneration
@@ -23,12 +27,14 @@ public class PlayerInputController : MonoBehaviour
     public void OnVertical(InputValue value) {
         //Debug.Log("Vertical " + value.Get<float>());
         cachedVertical = value.Get<float>();
+        verticalChanged.Invoke(value.Get<float>());
     }
 
     private float cachedHorizontal = 0;
     public void OnHorizontal(InputValue value) {
         //Debug.Log("Horizontal " + value.Get<float>());
         cachedHorizontal = value.Get<float>();
+        horizontalChanged.Invoke(value.Get<float>());
     }
 
     public void Update() {
@@ -44,6 +50,13 @@ public class PlayerInputController : MonoBehaviour
         quitPressed.Invoke();
     }
 
+    public void OnApply() {
+        applyPressed.Invoke();
+    }
+
+    public void OnBack() {
+        backPressed.Invoke();
+    }
    
 
 }

@@ -19,6 +19,29 @@ public class InputController : MonoBehaviour
     {
         currentButtons = null;
         currentIndex = 0;
+
+        proceduralGeneration.RiverGeneration.instance.playerInput.quitPressed.AddListener(OnPause);
+        proceduralGeneration.RiverGeneration.instance.playerInput.applyPressed.AddListener(OnConfirm);
+        proceduralGeneration.RiverGeneration.instance.playerInput.backPressed.AddListener(OnBack);
+        proceduralGeneration.RiverGeneration.instance.playerInput.verticalChanged.AddListener(OnVerticalChanged);
+        //proceduralGeneration.RiverGeneration.instance.playerInput.horizontalChanged.AddListener();
+    }
+
+    float lastVertical = 0;
+    public void OnVerticalChanged(float value) {
+        if (value == 0 || (lastVertical != 0 && Mathf.Sign(lastVertical) == Mathf.Sign(value))) {
+            lastVertical = value;
+            return;
+        }
+
+        if (value < 0) {
+            lastVertical = value;
+            OnDown();
+        }
+        else {
+            lastVertical = value;
+            OnUp();
+        }
     }
 
     public void OnUp()

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PagesManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PagesManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1.0f;
+
     }
 
     public void ClosePages()
@@ -23,6 +25,7 @@ public class PagesManager : MonoBehaviour
 
         foreach (var page in pages)
             page.SetActive(false);
+
     }
 
     public void OpenPage(string pageName)
