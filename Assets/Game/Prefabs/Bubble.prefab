@@ -2699,8 +2699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e834c204a6188428f3682305777e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalMagnitude: 500
-  horizontalMagnitude: 1000
+  verticalMagnitude: 1000
+  horizontalMagnitude: 3000
   verticalChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -37,7 +37,7 @@ public class PlayerInputController : MonoBehaviour
         horizontalChanged.Invoke(value.Get<float>());
     }
 
-    public void Update() {
+    public void FixedUpdate() {
         Vector3 force = new Vector3(cachedHorizontal * horizontalMagnitude, 0, cachedVertical * verticalMagnitude); // force to apply if the flow direction is forward
         Quaternion rotation = Quaternion.FromToRotation(Vector3.forward, bubbleBuoiancy.flowDirection.normalized); // rotation between forward and the actual flow direction
         Vector3 forceInFlowDirection = rotation * force;
