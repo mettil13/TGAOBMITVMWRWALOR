@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4476908845165443526}
-  waterHeight: 6
+  waterHeight: 5
   waterDensity: 200
   waveFrequency: 5
   waveAmplitude: 0.05
