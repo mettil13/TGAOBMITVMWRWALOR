@@ -373,7 +373,7 @@ MonoBehaviour:
   playerTrigger: {fileID: 0}
   trigger: {fileID: 5691491639627346066}
   pivots: {fileID: 2090893242835198347}
-  displacementMultiplier: 3
+  displacementMultiplier: 4.2
   sizeMultiplier: 150
   objectsToGenerate:
   - doNotGenerate: 1
@@ -384,57 +384,57 @@ MonoBehaviour:
   - doNotGenerate: 0
     prefab: {fileID: 6378555633869116841, guid: 4f0649bfa8d5fda40a9d7644c850a112, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 2491611448747367022, guid: 56c26f9ecf69eab4c86e1e43b923aec7, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 8869651289862025977, guid: 89c38f31939312a439edf467a83dae07, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 3611887303885732716, guid: c817347bf20bccd408be2e4e8b54edf6, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 5202775677581695346, guid: 55732bd592b39a240a94c1512afe76d1, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 2630895518434454308, guid: 3343f3e48206c324ba7ba9cff7a08a69, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 889394063157955389, guid: 60f47c7eacceb8e429f8ae4ba6c71085, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 0
     prefab: {fileID: 7070209561427830640, guid: b904bd01962e3a845bd98b2d24e60869, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 2, y: 3}
   - doNotGenerate: 1
     prefab: {fileID: 919132149155446097, guid: 2679fcc8644c61e4fae004c873cdfa20, type: 3}
     maxDisplacement: 2
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 400, y: 600}
   - doNotGenerate: 1
     prefab: {fileID: 919132149155446097, guid: 2679fcc8644c61e4fae004c873cdfa20, type: 3}
     maxDisplacement: 5
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 100, y: 200}
   - doNotGenerate: 1
     prefab: {fileID: 919132149155446097, guid: 2679fcc8644c61e4fae004c873cdfa20, type: 3}
     maxDisplacement: 5
-    offset: {x: 0, y: 6, z: 0}
+    offset: {x: 0, y: 5.7, z: 0}
     minMaxScaleFactor: {x: 100, y: 200}
 --- !u!1 &6104775537000764781
 GameObject:
