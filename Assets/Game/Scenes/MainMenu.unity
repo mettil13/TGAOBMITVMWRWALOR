@@ -4369,6 +4369,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadScene
       objectReference: {fileID: 0}
+    - target: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: ProceduralGenerationTest
+      objectReference: {fileID: 0}
     - target: {fileID: 6654782378264559270, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
       propertyPath: m_text
       value: Play
