@@ -56,7 +56,7 @@ namespace proceduralGeneration
             playerBuoiancy = playerObj.GetComponent<BubbleBuoiancy>();
             playerInput = playerObj.GetComponent<PlayerInputController>();
             playerDatas = playerObj.GetComponent<PlayerDatas>();
-            playerObj.transform.position = Vector3.zero + Vector3.up * 10;
+            playerObj.transform.position = Vector3.zero + Vector3.up * 5/* + Vector3.forward * 5*/;
         }
         private void Update()
         {

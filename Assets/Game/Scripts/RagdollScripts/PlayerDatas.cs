@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,11 @@ public class PlayerDatas : MonoBehaviour
     private float convertedParts = 0;
 
     public bool PercentageIsRight = true;
-    [SerializeField] TextMeshProUGUI uiPercentage;
+    public TextMeshProUGUI uiPercentage;
 
     void Start()
     {
+        DOTween.SetTweensCapacity(200,100);
         bodyParts = GetComponentsInChildren<RagdollDamageCollider>().ToList<RagdollDamageCollider>();
         foreach(var part in bodyParts) {
             convertedParts += part.Importance;
@@ -36,13 +38,21 @@ public class PlayerDatas : MonoBehaviour
             damagePercentage += part.Importance * part.DamagePercentage;
         }
         damagePercentage = Mathf.Clamp(damagePercentage / convertedParts, 0, 100);
-        //UpdateUIText();
+        if (damagePercentage >= 95)
+            damagePercentage = 100;
+
+        UpdateUIText();
+
+        if(damagePercentage >= 95) {
+            PagesManager.instance.OpenPage(Pages.Loose.ToString());
+        }
     }
 
     private void UpdateUIText() {
         int showedPercentage = (int)damagePercentage;
         uiPercentage.text = showedPercentage.ToString() + "%";
         //effetti grafici carini
+        
     }
 }
 

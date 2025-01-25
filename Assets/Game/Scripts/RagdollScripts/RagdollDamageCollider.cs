@@ -26,17 +26,20 @@ public class RagdollDamageCollider : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (isImmune) return;
         if (collision.gameObject.layer == 3) return;
+        if (isImmune) return;
+        if (damagePercentage == 100) return;
         StartCoroutine(SetImmunity(.3f));
 
         //provare entrambi i metodi e scegliere il migliore
-        float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z);
+        float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z)/3;
         //float impact = Mathf.Abs(collision.impulse.x) + Mathf.Abs(collision.impulse.y) + Mathf.Abs(collision.impulse.z);
-        if (impact <= 10f) return; //Da decidere la soglia via testing
+        if (impact <= 15f) return; //Da decidere la soglia via testing
         impactProva = impact; //Da togliere dopo testing
 
         damagePercentage = Mathf.Clamp(damagePercentage + impact, 0, 100);
+        if (damagePercentage >= 95)
+            damagePercentage = 100;
         playerDatas.PercentageIsRight = false;
 
         DOTween.Kill(this.gameObject);
@@ -51,11 +54,11 @@ public class RagdollDamageCollider : MonoBehaviour
 
             Tweener ToRed = DOVirtual.Float(renderer.material.GetFloat("_DamageColorPercentage"), 1f, 0.3f,
                 (f) => renderer.material.SetFloat("_DamageColorPercentage", f)
-                ).SetEase(Ease.InOutQuad);
+                ).SetEase(Ease.OutQuint);
 
             Tweener ToColor = DOVirtual.Float(1f, _damagePercentage, 0.5f,
                 (f) => renderer.material.SetFloat("_DamageColorPercentage", f)
-                ).SetEase(Ease.InOutQuad);
+                ).SetEase(Ease.OutQuint);
 
             mySequence.Append(ToRed);
             mySequence.Append(ToColor);
