@@ -17,4 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/ProceduralGenerationTest.unity
     guid: ff8429d04d1777846be38553eaa8b7d9
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 038c751a0ca43254380dd7ceb0e286c8, type: 2}
