@@ -830,6 +830,7 @@ MonoBehaviour:
   waveFrequency: 0.5
   waveAmplitude: 0.67
   r: 1
+  SplashClip: {fileID: 0}
   flowIntensity: 0
   flowDirection: {x: 0, y: 0, z: 1}
   splashVFX: {fileID: 0}
@@ -2664,7 +2665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1232145385}
   m_Layer: 0
-  m_Name: MENAGERS
+  m_Name: MANAGERS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2742,6 +2743,7 @@ MonoBehaviour:
   waveFrequency: 0.5
   waveAmplitude: 0.67
   r: 1
+  SplashClip: {fileID: 0}
   flowIntensity: 0
   flowDirection: {x: 0, y: 0, z: 1}
   splashVFX: {fileID: 0}
@@ -3523,6 +3525,7 @@ MonoBehaviour:
   waveFrequency: 0.5
   waveAmplitude: 0.67
   r: 1
+  SplashClip: {fileID: 0}
   flowIntensity: 0
   flowDirection: {x: 0, y: 0, z: 1}
   splashVFX: {fileID: 0}
