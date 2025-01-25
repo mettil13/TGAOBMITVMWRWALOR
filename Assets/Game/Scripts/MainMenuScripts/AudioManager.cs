@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
 
     public List<GameObject> gameObjectsToScale;
     public AudioSource audioSource;
-    public int spectrumIndex = 0; // Indice dello spettro da analizzare (frequenza specifica)
+    public int spectrumIndex = 400; // Indice dello spettro da analizzare (frequenza specifica)
     public float scaleMultiplier = 1.0f; // Quanto amplificare la scala
     public float bounceSpeed = 5.0f;
 
@@ -55,7 +55,6 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlaySound(AudioClip clip)
-
     {
         if (clip == null)
         {

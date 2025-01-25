@@ -27,7 +27,7 @@ public class MainMenuManager : MonoBehaviour
 
     IEnumerator WelcomeToGame()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(.7f);
 
         AudioManager.instance.PlaySound(welcomeToClip);
     }

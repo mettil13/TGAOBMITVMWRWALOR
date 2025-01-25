@@ -12,6 +12,11 @@ public class PagesManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
+
     public void ClosePages()
     {
         Time.timeScale = 1;
