@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class CreditsManager : MonoBehaviour
 {
     public ScrollRect scrollRect;
+    private RectTransform contentRect;
     public TextMeshProUGUI textMeshPro;
 
     public float scrollSpeed = 20f;
 
-    private RectTransform contentRect;
     private float targetPosition = 0f;
     private bool autoScroll = true;
 
