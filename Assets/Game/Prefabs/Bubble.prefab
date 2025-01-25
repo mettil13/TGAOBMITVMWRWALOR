@@ -2730,6 +2730,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePercentage: 0
   uiPercentage: {fileID: 0}
+  fontSmall: 150
+  fontBig: 200
+  curveFont:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7067377189534389321
 GameObject:
   m_ObjectHideFlags: 0

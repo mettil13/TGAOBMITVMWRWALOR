@@ -13,6 +13,8 @@ public class PlayerDatas : MonoBehaviour
     private float convertedParts = 0;
 
     public TextMeshProUGUI uiPercentage;
+    [SerializeField] int fontSmall;
+    [SerializeField] int fontBig;
 
     [SerializeField] AnimationCurve curveFont;
 
@@ -50,22 +52,34 @@ public class PlayerDatas : MonoBehaviour
         int showedPercentage = (int)damagePercentage;
         uiPercentage.text = showedPercentage.ToString() + "%";
 
-        TweenColor();
+        DOTween.Kill(this.gameObject);
+        //TweenColor();
         TweenFontSize();
     }
 
-    private void TweenColor() {
-        //Sequence myColorSequence = DOTween.Sequence();
-        //Tweener ToRed = uiPercentage.material.DOColor(Color.red, 0.2f).SetEase(Ease.OutQuint);
-        //Tweener ToWhite = uiPercentage.material.DOColor(Color.white, 0.4f).SetEase(Ease.OutQuint);
+    //private void TweenColor() {
+    //    Sequence myColorSequence = DOTween.Sequence();
+    //    Tweener ToRed = uiPercentage.fontMaterial.DOColor(Color.red, 0.2f).SetEase(Ease.OutQuint);
+    //    Tweener ToWhite = uiPercentage.fontMaterial.DOColor(Color.white, 0.4f).SetEase(Ease.OutQuint);
 
-        //myColorSequence.Append(ToRed);
-        //myColorSequence.Append(ToWhite);
 
-    }
+    //    myColorSequence.Append(ToRed);
+    //    myColorSequence.Append(ToWhite);
+    //}
 
     private void TweenFontSize() {
+        Sequence mySizeSequence = DOTween.Sequence();
 
+        Tweener ToBig = DOVirtual.Int(fontSmall, fontBig, 0.2f,
+            (f) => uiPercentage.fontSize = f
+            ).SetEase(Ease.OutQuint);
+
+        Tweener ToSmall = DOVirtual.Int(fontBig, fontSmall, 0.2f,
+            (f) => uiPercentage.fontSize = f
+            ).SetEase(Ease.OutQuint);
+
+        mySizeSequence.Append(ToBig);
+        mySizeSequence.Append(ToSmall);
     }
 
     public void TakeDamage(int damage) {
