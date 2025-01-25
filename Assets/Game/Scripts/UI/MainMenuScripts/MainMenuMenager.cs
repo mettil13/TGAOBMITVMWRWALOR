@@ -30,6 +30,10 @@ public class MainMenuManager : MonoBehaviour
         yield return new WaitForSeconds(.7f);
 
         AudioManager.instance.PlaySound(welcomeToClip);
+
+        yield return new WaitForSeconds(2.7f);
+
+        AudioManager.instance.audioSource.Play();
     }
 
     public void AnimateParticleColor(float r, float g, float b)

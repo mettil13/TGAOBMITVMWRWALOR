@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44576365, g: 0.4954778, b: 0.57428235, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1600,9 +1600,6 @@ MonoBehaviour:
   gameObjectsToScale:
   - {fileID: 1878078076}
   - {fileID: 942251263}
-  - {fileID: 1579380356}
-  - {fileID: 0}
-  - {fileID: 0}
   audioSource: {fileID: 634552640}
   spectrumIndex: 4
   scaleMultiplier: 1
@@ -1617,7 +1614,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cdf5ae87ee978dc43a56632a887925eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6ada2a11ae7edfa49a52ba40692f1f27, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2862,11 +2859,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   welcomeToClip: {fileID: 8300000, guid: 87de3ca901f27ff4bb3b6b0e64e8f469, type: 3}
   particleSystems: {fileID: 579311500}
---- !u!1 &1579380356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7673589731527262257, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
-  m_PrefabInstance: {fileID: 6138020951035183465}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1579380357 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8306406968361275112, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
