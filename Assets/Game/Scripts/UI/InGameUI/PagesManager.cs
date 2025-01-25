@@ -29,7 +29,7 @@ public class PagesManager : MonoBehaviour
     {
         ClosePages();
 
-        if (pageName == "Pause") Time.timeScale = 0;
+        Time.timeScale = 0;
 
         foreach (Pages pageEnum in System.Enum.GetValues(typeof(Pages)))
         {
