@@ -103,6 +103,21 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 79.359375
+      m_Height: 70.265625
+      m_HorizontalBearingX: 1.53125
+      m_HorizontalBearingY: 63.71875
+      m_HorizontalAdvance: 82.4375
+    m_GlyphRect:
+      m_X: 166
+      m_Y: 892
+      m_Width: 80
+      m_Height: 71
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   - m_Index: 11
     m_Metrics:
       m_Width: 22.796875
@@ -793,21 +808,6 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-  - m_Index: 8
-    m_Metrics:
-      m_Width: 79.359375
-      m_Height: 70.265625
-      m_HorizontalBearingX: 1.53125
-      m_HorizontalBearingY: 63.71875
-      m_HorizontalAdvance: 82.4375
-    m_GlyphRect:
-      m_X: 166
-      m_Y: 892
-      m_Width: 80
-      m_Height: 71
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
@@ -820,6 +820,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 34
     m_GlyphIndex: 5
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 37
+    m_GlyphIndex: 8
     m_Scale: 1
   - m_ElementType: 1
     m_Unicode: 37
@@ -928,6 +932,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 75
     m_GlyphIndex: 46
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 76
+    m_GlyphIndex: 47
     m_Scale: 1
   - m_ElementType: 1
     m_Unicode: 77
@@ -1088,14 +1096,6 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 8230
     m_GlyphIndex: 152
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 37
-    m_GlyphIndex: 8
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 76
-    m_GlyphIndex: 47
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 4264346379992722079}
@@ -1713,7 +1713,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Insanibu Atlas Material
   m_Shader: {fileID: 4800000, guid: c8d12adcee749c344b8117cf7c7eb912, type: 3}
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 996682776939896093, guid: 24e8ad390ca78a94fac54d5251ceab42, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -1727,101 +1727,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Cube:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _FaceTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 4264346379992722079}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MaskTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _Ambient: 0.5
-    - _Bevel: 0.5
-    - _BevelClamp: 0
-    - _BevelOffset: 0
-    - _BevelRoundness: 0
-    - _BevelWidth: 0
-    - _BumpFace: 0
-    - _BumpOutline: 0
-    - _ColorMask: 15
-    - _CullMode: 0
-    - _Diffuse: 0.5
-    - _DiffusePower: 1
-    - _FaceDilate: 0
-    - _FaceUVSpeedX: 0
-    - _FaceUVSpeedY: 0
-    - _GlowInner: 0.05
-    - _GlowOffset: 0
-    - _GlowOuter: 0.05
-    - _GlowPower: 0.75
-    - _GradientScale: 16
-    - _LightAngle: 3.1416
-    - _MaskEdgeSoftness: 0.01
-    - _MaskInverse: 0
-    - _MaskSoftnessX: 0
-    - _MaskSoftnessY: 0
-    - _MaskWipeControl: 0.5
-    - _OutlineSoftness: 0
-    - _OutlineUVSpeedX: 0
-    - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
-    - _PerspectiveFilter: 0.875
-    - _Reflectivity: 10
-    - _ScaleRatioA: 0.9375
-    - _ScaleRatioB: 0.76171875
-    - _ScaleRatioC: 0.76171875
-    - _ScaleX: 1
-    - _ScaleY: 1
-    - _ShaderFlags: 0
-    - _Sharpness: 0
-    - _SpecularPower: 2
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _TextureHeight: 1024
-    - _TextureWidth: 1024
-    - _UnderlayDilate: 0
-    - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: 0
-    - _UnderlaySoftness: 0
-    - _UseUIAlphaClip: 0
-    - _VertexOffsetX: 0
-    - _VertexOffsetY: 0
-    - _WeightBold: 0.75
-    - _WeightNormal: 0
+    m_Floats: []
     m_Colors:
-    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
-    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _MaskEdgeColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+    - _FaceColor: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   m_BuildTextureStacks: []
 --- !u!28 &4264346379992722079
 Texture2D:
