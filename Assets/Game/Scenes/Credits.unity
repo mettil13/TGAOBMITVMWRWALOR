@@ -768,17 +768,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CREDITS\n\n\n\n\n\n\n\n\n\nGame Designer:\n\nThe Community\n\nProgrammers:\n\nAndres
-    Tommaso\nArruzzoli Davide\nChilla Salvatore\nManuguerra Elan\nMariano Matilde\n\n3D
-    Artist:\n\nModelli Edoardo\n\nSound Designer:\n\n\nNarrative Designer:\nWhoever
-    has ever told a great story around a campfire\n\nSpecial Thanks:\n\nTo the caf\xE9
-    downstairs for endless coffee\nTo the cats walking on keyboards\nTo sudden crashes,
-    for teaching us patience\nTo pizza, the true source of inspiration\nTo everyone
-    who pressed \"Play\"\nThank you all for making this project a reality!\n\n\n\n\n\nPress
-    --Esc-- to go back to menu"
+  m_text: "<b>CREDITS</b>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <b>Game
+    Designer:</b> The Community\r\n\r\n\r\n\r\n    <b>Programmers:</b>\r\n\r\n\r\n   
+    Mariano\r\n    Matilde\r\n\r\n    Arruzzoli Davide\r\n\r\n    Manuguerra Elan\r\n\r\n   
+    Andres Tommaso\r\n\r\n    Chilla\r\n    Salvatore\r\n\r\n\r\n    <b>3D Artist:</b>
+    Modelli Edoardo\r\n\r\n\r\n    <b>Sound Designer:</b>\r\n    Andres Tommaso\r\n\r\n\r\n   
+    <b>Special Thanks:</b>\r\n\r\n\r\n    A special thanks to the folks\r\n    at
+    BolognaNerd,\r\n\r\n    To the pizzeria and kebab shops \"Due Fratelli\" and
+    \"Tre\r\n    Fratelli\" for feeding us these past few days,\r\n\r\n    The kittens
+    of StudioGattinity.\r\n\r\n\r\n\r\n\r\n\r\n\r\n    Press\r\n    --<b>Esc</b>--
+    to go back to menu"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1cadb9a8e69119045bb6b54a6ff67cca, type: 2}
+  m_sharedMaterial: {fileID: 996682776939896093, guid: 1cadb9a8e69119045bb6b54a6ff67cca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class PlayerDatas : MonoBehaviour
@@ -11,7 +12,7 @@ public class PlayerDatas : MonoBehaviour
     private float convertedParts = 0;
 
     public bool PercentageIsRight = true;
-    
+    [SerializeField] TextMeshProUGUI uiPercentage;
 
     void Start()
     {
@@ -34,6 +35,13 @@ public class PlayerDatas : MonoBehaviour
         }
         damagePercentage = Mathf.Clamp(damagePercentage / convertedParts, 0, 100);
         PercentageIsRight = true;
+        //UpdateUIText();
+    }
+
+    private void UpdateUIText() {
+        int showedPercentage = (int)damagePercentage;
+        uiPercentage.text = showedPercentage.ToString() + "%";
+        //effetti grafici carini
     }
 }
 

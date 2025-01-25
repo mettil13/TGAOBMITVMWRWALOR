@@ -1,15 +1,21 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private AudioClip welcomeToClip;
+    [SerializeField] private ParticleSystem particleSystems;
 
     private void Start()
     {
         StartCoroutine(WelcomeToGame());
+    }
+
+    private void Update()
+    {
+        int randomValue = Random.Range(0, 256);
+        AnimateParticleColor(5,255,45);
     }
 
     public void LoadScene(string sceneName)
@@ -21,8 +27,15 @@ public class MainMenuManager : MonoBehaviour
 
     IEnumerator WelcomeToGame()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
         AudioManager.instance.PlaySound(welcomeToClip);
+    }
+
+    public void AnimateParticleColor(float r, float g, float b)
+    {
+        var particleColor = particleSystems.colorOverLifetime.color;
+
+
     }
 }
