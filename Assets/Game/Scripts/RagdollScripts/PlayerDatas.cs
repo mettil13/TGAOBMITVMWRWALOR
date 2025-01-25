@@ -29,12 +29,13 @@ public class PlayerDatas : MonoBehaviour
 
     public void CalculatePercentage() {
         if (PercentageIsRight) return;
+        PercentageIsRight = true;
+
         damagePercentage = 0;
         foreach (var part in bodyParts) {
             damagePercentage += part.Importance * part.DamagePercentage;
         }
         damagePercentage = Mathf.Clamp(damagePercentage / convertedParts, 0, 100);
-        PercentageIsRight = true;
         //UpdateUIText();
     }
 

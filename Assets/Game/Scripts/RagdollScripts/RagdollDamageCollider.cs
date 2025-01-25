@@ -13,7 +13,7 @@ public class RagdollDamageCollider : MonoBehaviour
     public float DamagePercentage => damagePercentage;
     private bool isImmune = true;
 
-    [SerializeField] float impulseProva;
+    [SerializeField] float impactProva;
 
 
 
@@ -31,15 +31,15 @@ public class RagdollDamageCollider : MonoBehaviour
         StartCoroutine(SetImmunity(.3f));
 
         //provare entrambi i metodi e scegliere il migliore
-        //float impulse = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z);
-        float impulse = Mathf.Abs(collision.impulse.x) + Mathf.Abs(collision.impulse.y) + Mathf.Abs(collision.impulse.z);
-        if (impulse <= 0f) return; //Da decidere la soglia via testing
-        impulseProva = impulse; //Da togliere dopo testing
+        float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z);
+        //float impact = Mathf.Abs(collision.impulse.x) + Mathf.Abs(collision.impulse.y) + Mathf.Abs(collision.impulse.z);
+        if (impact <= 10f) return; //Da decidere la soglia via testing
+        impactProva = impact; //Da togliere dopo testing
 
-        damagePercentage = Mathf.Clamp(damagePercentage + impulse, 0, 100);
+        damagePercentage = Mathf.Clamp(damagePercentage + impact, 0, 100);
         playerDatas.PercentageIsRight = false;
 
-        DOTween.Kill(this);
+        DOTween.Kill(this.gameObject);
         ChangeColor(damagePercentage/100);
 
     }
