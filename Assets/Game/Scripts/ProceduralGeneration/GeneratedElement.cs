@@ -17,6 +17,7 @@ namespace proceduralGeneration
 
             public void GenerateElement(Transform elementFather, Vector3 worldPoint, Vector3 direction, float displacementMultiplier, float sizeMultiplier)
             {
+                if (worldPoint.sqrMagnitude < 20 * 20) return;
                 if (doNotGenerate) return;
 
                 Vector3 positionDirection = Quaternion.AngleAxis(90, Vector3.up) * direction;

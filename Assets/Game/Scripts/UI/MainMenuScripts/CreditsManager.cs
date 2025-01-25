@@ -29,7 +29,7 @@ public class CreditsManager : MonoBehaviour
 
         if (autoScroll && contentRect != null)
         {
-            textMeshPro.transform.position += new Vector3(0, .4f, 0);
+            textMeshPro.transform.position += new Vector3(0, .8f, 0);
         }
     }
 
