@@ -1221,10 +1221,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 734744612404018255, guid: 2db3337f3094ee04b80c38f58bcceb4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 20973de339b1e4c499f418450f221aeb, type: 2}
     - target: {fileID: 919132149155446097, guid: 2db3337f3094ee04b80c38f58bcceb4b, type: 3}
       propertyPath: m_Name
       value: Sinistra_50_Gradi
