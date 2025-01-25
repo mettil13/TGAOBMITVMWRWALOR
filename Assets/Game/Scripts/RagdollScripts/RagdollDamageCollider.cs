@@ -11,10 +11,10 @@ public class RagdollDamageCollider : MonoBehaviour
     [SerializeField] float partPercentage = 0;
     public float Importance => importance;
     public float PartPercentage => partPercentage;
-    private bool isImmune = true;
+    public bool isImmune = true;
 
     private void Start() {
-        StartCoroutine(SetImmunity(1f));
+        //StartCoroutine(SetImmunity(1f));
     }
     void Update()
     {

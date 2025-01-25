@@ -26,6 +26,13 @@ public class PlayerDatas : MonoBehaviour
             convertedParts += part.Importance;
             part.playerDatas = this;
         }
+        proceduralGeneration.RiverGeneration.instance.playerInput.applyPressed.AddListener(DeactivateInvincibility);
+    }
+
+    public void DeactivateInvincibility() {
+        foreach(var part in bodyParts) {
+            part.isImmune = false;
+        }
     }
 
 
