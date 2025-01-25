@@ -26,7 +26,7 @@ public class RagdollDamageCollider : MonoBehaviour
         if (isImmune) return;
 
         float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z)/2;
-        if (impact <= 20f) return;
+        if (impact <= 12f) return;
 
         StartCoroutine(SetImmunity(.3f));
 
