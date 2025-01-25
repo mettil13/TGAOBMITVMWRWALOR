@@ -12,8 +12,9 @@ public class PlayerDatas : MonoBehaviour
     [SerializeField] float damagePercentage = 0;
     private float convertedParts = 0;
 
-    //public bool PercentageIsRight = true;
     public TextMeshProUGUI uiPercentage;
+
+    [SerializeField] AnimationCurve curveFont;
 
     void Start()
     {
@@ -48,8 +49,23 @@ public class PlayerDatas : MonoBehaviour
     private void UpdateUIText() {
         int showedPercentage = (int)damagePercentage;
         uiPercentage.text = showedPercentage.ToString() + "%";
-        //effetti grafici carini
-        
+
+        TweenColor();
+        TweenFontSize();
+    }
+
+    private void TweenColor() {
+        //Sequence myColorSequence = DOTween.Sequence();
+        //Tweener ToRed = uiPercentage.material.DOColor(Color.red, 0.2f).SetEase(Ease.OutQuint);
+        //Tweener ToWhite = uiPercentage.material.DOColor(Color.white, 0.4f).SetEase(Ease.OutQuint);
+
+        //myColorSequence.Append(ToRed);
+        //myColorSequence.Append(ToWhite);
+
+    }
+
+    private void TweenFontSize() {
+
     }
 
     public void TakeDamage(int damage) {
