@@ -45,7 +45,8 @@ public class PlayerInputController : MonoBehaviour
     }
 
     private void OnCollisionStay(Collision collision) {
-        if(collision.gameObject.layer != LayerMask.NameToLayer("Ground")) {
+        Debug.Log("COLLISIONEEEEEEEEEEE " + collision.gameObject.name);
+        if (collision.gameObject.layer != LayerMask.NameToLayer("Ground")) {
             return;
         }
 
@@ -54,7 +55,7 @@ public class PlayerInputController : MonoBehaviour
         rb.velocity = rb.velocity.magnitude * angle * Vector3.forward;
         Debug.DrawLine(rb.position, rb.velocity, Color.red);
         Debug.DrawLine(rb.position, proceduralGeneration.RiverGeneration.instance.playerNearestPoint.transform.position, Color.green);
-        Debug.Break();
+        //Debug.Break();
     }
 
 }
