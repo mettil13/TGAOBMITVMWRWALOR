@@ -12,7 +12,7 @@ public class PlayerDatas : MonoBehaviour
     [SerializeField] float damagePercentage = 0;
     private float convertedParts = 0;
 
-    public bool PercentageIsRight = true;
+    //public bool PercentageIsRight = true;
     public TextMeshProUGUI uiPercentage;
 
     void Start()
@@ -25,34 +25,39 @@ public class PlayerDatas : MonoBehaviour
         }
     }
 
-    private void Update() {
-        CalculatePercentage();
-    }
 
-    public void CalculatePercentage() {
-        if (PercentageIsRight) return;
-        PercentageIsRight = true;
+    //public void CalculatePercentage() {
+    //    if (PercentageIsRight) return;
+    //    PercentageIsRight = true;
 
-        damagePercentage = 0;
-        foreach (var part in bodyParts) {
-            damagePercentage += part.Importance * part.DamagePercentage;
-        }
-        damagePercentage = Mathf.Clamp(damagePercentage / convertedParts, 0, 100);
-        if (damagePercentage >= 95)
-            damagePercentage = 100;
+    //    damagePercentage = 0;
+    //    foreach (var part in bodyParts) {
+    //        damagePercentage += part.Importance * part.PartPercentage;
+    //    }
+    //    damagePercentage = Mathf.Clamp(damagePercentage / convertedParts, 0, 100);
+    //    if (damagePercentage >= 95)
+    //        damagePercentage = 100;
 
-        UpdateUIText();
+    //    UpdateUIText();
 
-        if(damagePercentage >= 95) {
-            PagesManager.instance.OpenPage(Pages.Loose.ToString());
-        }
-    }
+    //    if (damagePercentage >= 95) {
+    //        PagesManager.instance.OpenPage(Pages.Loose.ToString());
+    //    }
+    //}
 
     private void UpdateUIText() {
         int showedPercentage = (int)damagePercentage;
         uiPercentage.text = showedPercentage.ToString() + "%";
         //effetti grafici carini
         
+    }
+
+    public void TakeDamage(int damage) {
+        damagePercentage = Mathf.Clamp(damagePercentage + damage/convertedParts,0,100);
+        UpdateUIText();
+        if(damagePercentage >= 100) {
+            PagesManager.instance.OpenPage(Pages.Loose.ToString());
+        }
     }
 }
 
