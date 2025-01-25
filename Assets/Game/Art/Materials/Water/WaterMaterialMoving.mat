@@ -66,7 +66,7 @@ Material:
     - _Depth: 1.05
     - _DepthFade: 1.87
     - _DstBlend: 10
-    - _FlowSpeed: 10
+    - _FlowSpeed: 40
     - _FoamCutOff: 0.7
     - _FoamFrequency: 2
     - _FoamSpeed: 7.24
@@ -91,7 +91,7 @@ Material:
     - _MainColor: {r: 0.33409125, g: 0.34626284, b: 0.3962264, a: 0.89411765}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SecondaryColor: {r: 0.07058823, g: 0.599621, b: 1, a: 0.9019608}
-    - _TILE: {r: 100, g: 100, b: 0, a: 0}
+    - _TILE: {r: 400, g: 400, b: 0, a: 0}
     - _TextureMoveIntensity: {r: 1.28, g: 1.23, b: 0, a: 0}
     - _TextureTiling: {r: -19.09, g: -19.09, b: 0, a: 0}
     - _offset: {r: 103.7, g: 12.91, b: 0, a: 0}
