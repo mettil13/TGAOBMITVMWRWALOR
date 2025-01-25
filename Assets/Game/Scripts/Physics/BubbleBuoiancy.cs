@@ -21,6 +21,8 @@ public class BubbleBuoiancy : MonoBehaviour
     bool isInWater;
     [SerializeField] public GameObject splashVFX;
 
+    Vector3 previousFlowDirection;
+    [SerializeField] float flowDirChangeSpeed;
     private void FixedUpdate()
     {
         float y = transform.position.y;
@@ -74,7 +76,9 @@ public class BubbleBuoiancy : MonoBehaviour
 
         float force = v * waterDensity * -Physics.gravity.y;
 
-        rb.AddForce(Vector3.up * force + drag + flowDirection * flowIntensity * A, ForceMode.Force);
+        previousFlowDirection = Vector3.Slerp(previousFlowDirection, flowDirection, Time.deltaTime * flowDirChangeSpeed);
+
+        rb.AddForce(Vector3.up * force + drag + previousFlowDirection * flowIntensity * A, ForceMode.Force);
     }
 
     float AreaCrossSection(float r, float h)
