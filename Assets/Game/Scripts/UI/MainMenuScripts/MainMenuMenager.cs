@@ -15,7 +15,6 @@ public class MainMenuManager : MonoBehaviour
     private void Update()
     {
         int randomValue = Random.Range(0, 256);
-        AnimateParticleColor(5,255,45);
     }
 
     public void LoadScene(string sceneName)
@@ -34,12 +33,5 @@ public class MainMenuManager : MonoBehaviour
         yield return new WaitForSeconds(2.7f);
 
         AudioManager.instance.audioSource.Play();
-    }
-
-    public void AnimateParticleColor(float r, float g, float b)
-    {
-        var particleColor = particleSystems.colorOverLifetime.color;
-
-
     }
 }

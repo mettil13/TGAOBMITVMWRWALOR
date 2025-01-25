@@ -2652,6 +2652,7 @@ MonoBehaviour:
   waveFrequency: 5
   waveAmplitude: 0.05
   r: 1.7
+  SplashClip: {fileID: 8300000, guid: 649c34905c3039b4b92f38c16cea9198, type: 3}
   flowIntensity: 100
   flowDirection: {x: 0, y: 0, z: 1}
   splashVFX: {fileID: 3261213671962716712, guid: 5a0dbfb94bdac4942b136721bd847841, type: 3}
@@ -2699,7 +2700,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalMagnitude: 500
   horizontalMagnitude: 1000
+  verticalChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  horizontalChanged:
+    m_PersistentCalls:
+      m_Calls: []
   quitPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  applyPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  backPressed:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &912887474046382381
