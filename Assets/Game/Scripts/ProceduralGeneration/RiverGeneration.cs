@@ -82,7 +82,7 @@ namespace proceduralGeneration
             // random generation of the element
             GeneratedElement element =
                 GameObject.Instantiate(elementsToGenerate[
-                    Random.Range(0, elementsToGenerate.Count - 1)
+                    Random.Range(0, elementsToGenerate.Count)
                     ].prefab.gameObject).GetComponent<GeneratedElement>();
             element.transform.parent = riverContainer;
             
