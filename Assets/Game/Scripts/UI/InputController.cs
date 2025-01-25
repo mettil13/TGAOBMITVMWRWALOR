@@ -28,17 +28,21 @@ public class InputController : MonoBehaviour
     }
 
     float lastVertical = 0;
-    public void OnVerticalChanged(float value) {
-        if (value == 0 || (lastVertical != 0 && Mathf.Sign(lastVertical) == Mathf.Sign(value))) {
+    public void OnVerticalChanged(float value)
+    {
+        if (value == 0 || (lastVertical != 0 && Mathf.Sign(lastVertical) == Mathf.Sign(value)))
+        {
             lastVertical = value;
             return;
         }
 
-        if (value < 0) {
+        if (value < 0)
+        {
             lastVertical = value;
             OnDown();
         }
-        else {
+        else
+        {
             lastVertical = value;
             OnUp();
         }
@@ -62,6 +66,8 @@ public class InputController : MonoBehaviour
 
     public void OnBack()
     {
+        if (PagesManager.instance.pages[1].activeSelf) return;
+
         PagesManager.instance.ClosePages();
         currentButtons = null;
         currentIndex = 0;
@@ -76,7 +82,7 @@ public class InputController : MonoBehaviour
 
     public void OnPause()
     {
-        if (PagesManager.instance == null) return;
+        if (PagesManager.instance == null || PagesManager.instance.pages[1].activeSelf) return;
 
         if (pauseMenu.activeSelf)
         {
@@ -107,13 +113,11 @@ public class InputController : MonoBehaviour
 
     public void OnPageChange(string pageName)
     {
-        PagesManager.instance.OpenPage(pageName);
-
         if (pageName == "Pause")
         {
             currentButtons = pauseButtons;
         }
-        else if (pageName == "Loose")
+        else if (pageName == "Lose")
         {
             currentButtons = looseButtons;
         }
@@ -122,7 +126,7 @@ public class InputController : MonoBehaviour
             currentButtons = null;
         }
 
-        currentIndex = 0;
         UpdateButtonSelection();
+        currentIndex = 0;
     }
 }

@@ -1537,6 +1537,7 @@ MonoBehaviour:
   pages:
   - {fileID: 3941684735363699098}
   - {fileID: 7128393275270326162}
+  inputController: {fileID: 0}
 --- !u!114 &6572162187422313354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,9 +1900,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2880009646346614032}
   - {fileID: 7451090831605831494}
   - {fileID: 8790714084857580414}
-  - {fileID: 2880009646346614032}
   m_Father: {fileID: 4726087937483305466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

@@ -6,7 +6,8 @@ public class PagesManager : MonoBehaviour
 {
     public static PagesManager instance;
 
-    [SerializeField] private GameObject[] pages;
+    [SerializeField] public GameObject[] pages;
+    [SerializeField] private InputController inputController;
 
     private void Awake()
     {
@@ -47,9 +48,11 @@ public class PagesManager : MonoBehaviour
                 {
                     Debug.LogWarning($"Page index {pageIndex} is out of range.");
                 }
+                inputController.OnPageChange(pageName);
                 return;
             }
         }
+
 
         Debug.LogWarning($"Page with name \"{pageName}\" not found in enum Pages.");
     }
@@ -58,5 +61,5 @@ public class PagesManager : MonoBehaviour
 public enum Pages
 {
     Pause = 0,
-    Loose = 1
+    Lose = 1
 }

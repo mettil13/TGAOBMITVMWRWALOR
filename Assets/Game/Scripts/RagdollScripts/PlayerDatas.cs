@@ -72,7 +72,7 @@ public class PlayerDatas : MonoBehaviour
         damagePercentage = Mathf.Clamp(damagePercentage + damage/convertedParts,0,100);
         UpdateUIText();
         if(damagePercentage >= 100) {
-            PagesManager.instance.OpenPage(Pages.Loose.ToString());
+            PagesManager.instance.OpenPage(Pages.Lose.ToString());
         }
     }
 }
