@@ -49,6 +49,7 @@ public class PlayerDatas : MonoBehaviour
     //}
 
     private void UpdateUIText() {
+        if (uiPercentage == null) return;
         int showedPercentage = (int)damagePercentage;
         uiPercentage.text = showedPercentage.ToString() + "%";
 
