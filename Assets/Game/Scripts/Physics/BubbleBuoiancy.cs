@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BubbleBuoiancy : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class BubbleBuoiancy : MonoBehaviour
 
     public float flowIntensity;
     [SerializeField] public Vector3 flowDirection = Vector3.forward;
+    bool isInWater;
+    [SerializeField] public UnityEvent OnWaterEnter;
 
     private void FixedUpdate()
     {
@@ -23,9 +26,14 @@ public class BubbleBuoiancy : MonoBehaviour
         float v = 0f;
         float A = 0f;
         float waterHeightWaved = waterHeight + (waveAmplitude * Mathf.Sin(Time.time * waveFrequency));
-
+        
         if (low < waterHeightWaved) 
         {
+            if (!isInWater) 
+            {
+                OnWaterEnter?.Invoke();
+            }
+            isInWater = true;
             if (y > waterHeightWaved)
             {
                 float h = waterHeightWaved - low;
