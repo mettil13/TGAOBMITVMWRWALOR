@@ -2593,7 +2593,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6875212418781688385}
   serializedVersion: 4
-  m_Mass: 80
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2647,7 +2647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4476908845165443526}
   waterHeight: 5
-  waterDensity: 1000
+  waterDensity: 240
   waveFrequency: 5
   waveAmplitude: 0.05
   r: 1.7
@@ -2696,7 +2696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalMagnitude: 1
-  horizontalMagnitude: 1
+  horizontalMagnitude: 500
   quitPressed:
     m_PersistentCalls:
       m_Calls: []
