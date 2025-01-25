@@ -7,6 +7,7 @@ public class BackgroundImage : MonoBehaviour
     private Vector2 speed;
     [SerializeField, Range(0, 1)]
     private float matchWidthOrHeight = 0;
+    [SerializeField] bool notSetHeight;
 
     RawImage image;
 
@@ -23,7 +24,7 @@ public class BackgroundImage : MonoBehaviour
             (rect.position.y + speed.y * Time.deltaTime) % 1
         );
         rect.width = rect.width * (1f - matchWidthOrHeight) + matchWidthOrHeight * rect.height * Screen.width / Screen.height;
-        rect.height = rect.height * matchWidthOrHeight + (1f - matchWidthOrHeight) * rect.width * Screen.height / Screen.width;
+        if (!notSetHeight) rect.height = rect.height * matchWidthOrHeight + (1f - matchWidthOrHeight) * rect.width * Screen.height / Screen.width;
         image.uvRect = rect;
     }
 }
