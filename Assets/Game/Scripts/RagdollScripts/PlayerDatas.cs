@@ -31,7 +31,7 @@ public class PlayerDatas : MonoBehaviour
 
     public void DeactivateInvincibility() {
         foreach(var part in bodyParts) {
-            part.isImmune = false;
+            part.StartCoroutine(part.SetImmunity(.3f));
         }
     }
 

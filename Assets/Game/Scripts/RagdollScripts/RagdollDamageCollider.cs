@@ -11,7 +11,7 @@ public class RagdollDamageCollider : MonoBehaviour
     [SerializeField] float partPercentage = 0;
     public float Importance => importance;
     public float PartPercentage => partPercentage;
-    public bool isImmune = true;
+    private bool isImmune = true;
 
     private void Start() {
         //StartCoroutine(SetImmunity(1f));
@@ -25,12 +25,12 @@ public class RagdollDamageCollider : MonoBehaviour
         if (collision.gameObject.layer == 3) return;
         if (isImmune) return;
 
-        float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z)/2;
-        if (impact <= 12f) return;
+        float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z)/1.5f;
+        if (impact <= 10f) return;
 
         StartCoroutine(SetImmunity(.3f));
 
-        playerDatas.TakeDamage((int)(impact*importance));
+        playerDatas.TakeDamage((int)(Mathf.Clamp(impact * importance,10,20)));
 
         partPercentage = Mathf.Clamp(partPercentage + impact, 0, 100);
 
@@ -60,7 +60,7 @@ public class RagdollDamageCollider : MonoBehaviour
 
     }
 
-    private IEnumerator SetImmunity(float time) {
+    public IEnumerator SetImmunity(float time) {
         isImmune = true;
         yield return new WaitForSeconds(time);
         isImmune = false;
