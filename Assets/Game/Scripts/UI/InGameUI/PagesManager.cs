@@ -17,7 +17,15 @@ public class PagesManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1.0f;
+    }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            if (pages[(int)Pages.Pause].activeSelf)
+                OpenPage(Pages.Pause.ToString());
+            else if(!pages[(int)Pages.Lose].activeSelf)
+                ClosePages();
     }
 
     public void ClosePages()
