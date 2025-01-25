@@ -80,7 +80,10 @@ namespace proceduralGeneration
         public void GenerateNextElement()
         {
             // random generation of the element
-            GeneratedElement element = GameObject.Instantiate(elementsToGenerate[0].prefab.gameObject).GetComponent<GeneratedElement>();
+            GeneratedElement element =
+                GameObject.Instantiate(elementsToGenerate[
+                    Random.Range(0, elementsToGenerate.Count - 1)
+                    ].prefab.gameObject).GetComponent<GeneratedElement>();
             element.transform.parent = riverContainer;
             
             if (generatedElements.Count == 0)
@@ -92,7 +95,7 @@ namespace proceduralGeneration
             }
 
             element.transform.position = lastInsertedElement.endPivot.position;
-            element.transform.eulerAngles = lastInsertedElement.endPivot.eulerAngles;
+            element.transform.eulerAngles = lastInsertedElement.endPivot.eulerAngles + Vector3.up * -90;
             generatedElements.Add(element);
         }
         public void RemoveElement(GeneratedElement elementToRemove, bool destroyElement)

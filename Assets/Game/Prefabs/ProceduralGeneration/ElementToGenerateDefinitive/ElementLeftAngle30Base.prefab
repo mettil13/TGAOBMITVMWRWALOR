@@ -74,7 +74,15 @@ PrefabInstance:
       objectReference: {fileID: 2551028942947246022}
     - target: {fileID: 5787866931252565202, guid: 22f31ba2a67a053479d1c37a185acda2, type: 3}
       propertyPath: m_Name
-      value: ElementRightAngle30Base
+      value: ElementLeftAngle30Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948852996725495711, guid: 22f31ba2a67a053479d1c37a185acda2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948852996725495711, guid: 22f31ba2a67a053479d1c37a185acda2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 58.4
       objectReference: {fileID: 0}
     - target: {fileID: 8285607901926310517, guid: 22f31ba2a67a053479d1c37a185acda2, type: 3}
       propertyPath: endPivot

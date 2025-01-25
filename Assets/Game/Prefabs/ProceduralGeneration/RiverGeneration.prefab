@@ -46,7 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementsToGenerate:
-  - prefab: {fileID: 8285607901926310517, guid: 22f31ba2a67a053479d1c37a185acda2, type: 3}
+  - prefab: {fileID: 7283409809083463139, guid: ef9994fbb757ed340ae8beb14eb60308, type: 3}
+  - prefab: {fileID: 1227010834063236019, guid: 0478cc7851bef1440879c104e5c18a16, type: 3}
+  - prefab: {fileID: 8596739131767333852, guid: eb3422a219619474b9eed9a60728c985, type: 3}
+  - prefab: {fileID: 6500853074971444705, guid: 0d8fb1da2804aa54798c0d2975ec02ed, type: 3}
+  - prefab: {fileID: 5275730714312785335, guid: be18d2533aa323c4f80e9f685e11f634, type: 3}
+  - prefab: {fileID: 1242274115075967237, guid: 959b3e91e0766fa4f8d44325e7eea6e2, type: 3}
+  - prefab: {fileID: 932292335343785369, guid: 70c9eb4d3e754c34d86e91392e321c73, type: 3}
   playerPref: {fileID: 6875212418781688385, guid: 4a0294dedb2d5d146912183ccf20c492, type: 3}
   playerObj: {fileID: 0}
   playerBuoiancy: {fileID: 0}
@@ -59,6 +65,7 @@ MonoBehaviour:
   timeToCheckElementToRemove: 0.2
   timeToRemovePreviousElement: 1
   playerPosition: {fileID: 0}
+  lastTrigger: {fileID: 0}
   playerNearestPoint: {fileID: 0}
 --- !u!1 &8868417961025092547
 GameObject:

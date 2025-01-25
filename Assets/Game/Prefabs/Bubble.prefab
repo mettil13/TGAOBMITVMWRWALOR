@@ -2646,12 +2646,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4476908845165443526}
-  waterHeight: 5
-  waterDensity: 240
+  waterHeight: 6
+  waterDensity: 200
   waveFrequency: 5
   waveAmplitude: 0.05
   r: 1.7
-  flowIntensity: 500
+  flowIntensity: 100
   flowDirection: {x: 0, y: 0, z: 1}
 --- !u!114 &9220161579762884231
 MonoBehaviour:
@@ -2695,8 +2695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e834c204a6188428f3682305777e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalMagnitude: 1
-  horizontalMagnitude: 500
+  verticalMagnitude: 500
+  horizontalMagnitude: 1000
   quitPressed:
     m_PersistentCalls:
       m_Calls: []
