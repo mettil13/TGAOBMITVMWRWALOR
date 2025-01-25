@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour
         cam.LookAt = RiverGeneration.instance.playerObj.transform;
 
         startOffset = transform.position - cam.LookAt.transform.position ;
+        lastOffset = startOffset;
     }
 
     private void LateUpdate()
