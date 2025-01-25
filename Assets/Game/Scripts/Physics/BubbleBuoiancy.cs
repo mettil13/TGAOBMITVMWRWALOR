@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.VFX;
 
 public class BubbleBuoiancy : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class BubbleBuoiancy : MonoBehaviour
     public float flowIntensity;
     [SerializeField] public Vector3 flowDirection = Vector3.forward;
     bool isInWater;
-    [SerializeField] public UnityEvent OnWaterEnter;
+    [SerializeField] public GameObject splashVFX;
 
     private void FixedUpdate()
     {
@@ -31,7 +32,10 @@ public class BubbleBuoiancy : MonoBehaviour
         {
             if (!isInWater) 
             {
-                OnWaterEnter?.Invoke();
+                GameObject vfx = Instantiate(splashVFX, transform.position + Vector3.down * r, Quaternion.identity);
+                vfx.GetComponent<VisualEffect>().Play();
+                Destroy(vfx, 5f);
+                Debug.Log("Splash");
             }
             isInWater = true;
             if (y > waterHeightWaved)
@@ -55,6 +59,10 @@ public class BubbleBuoiancy : MonoBehaviour
                     v = (4f / 3f * Mathf.PI * r * r * r);
                 }
             }
+        }
+        else 
+        {
+            isInWater = false;
         }
 
         Vector3 drag = Drag(waterDensity, rb.velocity, A);

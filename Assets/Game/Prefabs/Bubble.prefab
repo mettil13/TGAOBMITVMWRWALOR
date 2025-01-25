@@ -2647,13 +2647,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4476908845165443526}
-  waterHeight: 5
+  waterHeight: 6
   waterDensity: 200
   waveFrequency: 5
   waveAmplitude: 0.05
   r: 1.7
   flowIntensity: 100
   flowDirection: {x: 0, y: 0, z: 1}
+  splashVFX: {fileID: 3261213671962716712, guid: 5a0dbfb94bdac4942b136721bd847841, type: 3}
 --- !u!114 &9220161579762884231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2714,7 +2715,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePercentage: 0
-  PercentageIsRight: 1
   uiPercentage: {fileID: 0}
 --- !u!1 &7067377189534389321
 GameObject:
