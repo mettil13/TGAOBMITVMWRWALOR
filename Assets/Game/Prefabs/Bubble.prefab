@@ -2699,7 +2699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e834c204a6188428f3682305777e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalMagnitude: 1000
+  verticalMagnitude: 3000
   horizontalMagnitude: 3000
   verticalChanged:
     m_PersistentCalls:
@@ -2730,6 +2730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePercentage: 0
   uiPercentage: {fileID: 0}
+  uiPercentagetmptext: {fileID: 0}
   fontSmall: 150
   fontBig: 200
   curveFont:
@@ -2738,6 +2739,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  damageTaken:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7067377189534389321
 GameObject:
   m_ObjectHideFlags: 0
