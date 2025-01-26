@@ -69,7 +69,19 @@ Material:
     - _FlowSpeed: 40
     - _FoamCutOff: 0.7
     - _FoamFrequency: 2
+    - _FoamNoise: 0.1
+    - _FoamNoiseDistance: -1.4
+    - _FoamNoiseDistance_1: 0.45
+    - _FoamNoiseDistance_Glob: 1.96
+    - _FoamNoiseDistance_Global: -0.2
+    - _FoamNoiseGlobal: 0.2
+    - _FoamNoiseGlobal_Y: 6
+    - _FoamNoiseY: 6
+    - _FoamNoiseYGlobal: 3.8
     - _FoamSpeed: 7.24
+    - _FoamSpeedNoise: 0
+    - _Foam_Speed: -25
+    - _Foam_Speed_B: -1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 0
@@ -87,7 +99,7 @@ Material:
     - _edgeIn: 1.06
     - _edgeOut: 0.05
     m_Colors:
-    - _FoamColor: {r: 0.9846921, g: 1, b: 0.9989697, a: 1}
+    - _FoamColor: {r: 0.1254902, g: 0.27993795, b: 0.46226418, a: 1}
     - _MainColor: {r: 0.33409125, g: 0.34626284, b: 0.3962264, a: 0.89411765}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SecondaryColor: {r: 0.07058823, g: 0.599621, b: 1, a: 0.9019608}

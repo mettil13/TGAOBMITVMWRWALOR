@@ -66,7 +66,7 @@ Material:
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainTex: {r: 0, g: 0, b: 0, a: 0}
-    - _SecondaryColor: {r: 0.2013223, g: 0.70392, b: 0.7264151, a: 1}
+    - _SecondaryColor: {r: 0.5134745, g: 0.84304214, b: 0.8584906, a: 1}
     - _TILE: {r: 4, g: 128, b: 0, a: 0}
     - _TextureMoveIntensity: {r: 0.03, g: 0.05, b: 0, a: 0}
     - _TextureTiling: {r: 1, g: 1, b: 0, a: 0}
