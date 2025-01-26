@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: a8c928df11972a44f94abe36944a1c2f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_0
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 859
+        width: 297
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -118.5, y: 137.5}
+        - {x: -138.5, y: 128.5}
+        - {x: -138.5, y: -81.5}
+        - {x: -106.5, y: -128.5}
+        - {x: -3.5, y: -142.5}
+        - {x: 108.5, y: -128.5}
+        - {x: 133.5, y: -120.5}
+        - {x: 133.5, y: 97.5}
+        - {x: 118.5, y: 137.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c30d950a3dfe2549afae8b3beeac266
+      internalID: -1610977952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_1
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 643
+        width: 234
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -117, y: 109.5}
+        - {x: -111, y: 37.5}
+        - {x: -117, y: -106.5}
+        - {x: 112, y: -105.5}
+        - {x: 107, y: 9.5}
+        - {x: 104, y: 105.5}
+        - {x: 103, y: 109.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345e39b2d44f097408bd123b2282de6a
+      internalID: -1117066415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 464
+        width: 262
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 83}
+        - {x: -120, y: 77}
+        - {x: -125, y: 15}
+        - {x: -125, y: -14}
+        - {x: -39, y: -85}
+        - {x: 37, y: -85}
+        - {x: 123, y: -13}
+        - {x: 123, y: 83}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af67094d195fc244e953de9f7fb7ff7d
+      internalID: -569096078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_4
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 328
+        width: 136
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 97.5}
+        - {x: -42, y: 97.5}
+        - {x: -59, y: -72.5}
+        - {x: -59, y: -91.5}
+        - {x: -53, y: -93.5}
+        - {x: -9, y: -100.5}
+        - {x: 52, y: -100.5}
+        - {x: 55, y: -74.5}
+        - {x: 57, y: 32.5}
+        - {x: 28, y: 63.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14df2f94106c1a4b929c33e87314fcf
+      internalID: -519768174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_5
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 327
+        width: 137
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.5, y: -63}
+        - {x: -53.5, y: -100}
+        - {x: 57.5, y: -100}
+        - {x: 57.5, y: -21}
+        - {x: 47.5, y: 98}
+        - {x: 17.5, y: 98}
+        - {x: -56.5, y: 35}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585ff8a6a590e2144ab99f2854f7cd83
+      internalID: 442627578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 124
+        width: 247
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110.5, y: 101.5}
+        - {x: -110.5, y: -12.5}
+        - {x: -101.5, y: -55.5}
+        - {x: -19.5, y: -92.5}
+        - {x: 75.5, y: -92.5}
+        - {x: 112.5, y: -78.5}
+        - {x: 112.5, y: 8.5}
+        - {x: 28.5, y: 101.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfd5c70538d9554e9b30686e30b95bf
+      internalID: -360247883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 122
+        width: 243
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.5, y: 103}
+        - {x: -47.5, y: 103}
+        - {x: -106.5, y: 22}
+        - {x: -106.5, y: -92}
+        - {x: 41.5, y: -92}
+        - {x: 116.5, y: -54}
+        - {x: 116.5, y: 97}
+        - {x: 113.5, y: 97}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a2468e38fa104419a30867f5d79c36
+      internalID: 1844368441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 511
+        width: 233
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.5, y: 101.5}
+        - {x: 1.5, y: 96.5}
+        - {x: -99.5, y: 70.5}
+        - {x: -99.5, y: -50.5}
+        - {x: -80.5, y: -70.5}
+        - {x: -29.5, y: -95.5}
+        - {x: 15.5, y: -95.5}
+        - {x: 23.5, y: -93.5}
+        - {x: 52.5, y: -66.5}
+        - {x: 110.5, y: 28.5}
+        - {x: 110.5, y: 37.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83823dc98c4df8b44b95bff19204b5a8
+      internalID: 1407500861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 652
+        width: 203
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 87}
+        - {x: -55.5, y: 8}
+        - {x: -83.5, y: -27}
+        - {x: -83.5, y: -41}
+        - {x: -22.5, y: -97}
+        - {x: -2.5, y: -97}
+        - {x: 94.5, y: 12}
+        - {x: 94.5, y: 58}
+        - {x: 80.5, y: 87}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f97ff007bbf0e4496abdef19f437dc
+      internalID: -617942912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_10
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 503
+        width: 243
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 99.5}
+        - {x: -39.5, y: 104.5}
+        - {x: -112.5, y: 41.5}
+        - {x: -109.5, y: 11.5}
+        - {x: -33.5, y: -92.5}
+        - {x: 50.5, y: -92.5}
+        - {x: 100.5, y: -51.5}
+        - {x: 100.5, y: 14.5}
+        - {x: 89.5, y: 44.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3900c57f5e76349bee9811f9f16ee9
+      internalID: 1695016549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manichinoAPoseBorder_11
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 645
+        width: 215
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 93}
+        - {x: -17.5, y: 95}
+        - {x: -69.5, y: 95}
+        - {x: -89.5, y: 81}
+        - {x: -89.5, y: 29}
+        - {x: 4.5, y: -89}
+        - {x: 18.5, y: -89}
+        - {x: 75.5, y: -39}
+        - {x: 88.5, y: -26}
+        - {x: 88.5, y: -20}
+        - {x: 63.5, y: 10}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39747d25de157794eb94bc9eb97bee25
+      internalID: 1399517287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 0, y: 252}
+      - {x: -169, y: 295}
+      - {x: -185, y: 552}
+      - {x: 160, y: 549}
+      - {x: 161, y: 287}
+    - - {x: -110, y: 118}
+      - {x: -104, y: 198}
+      - {x: -108, y: 271}
+      - {x: -39, y: 260}
+      - {x: 46, y: 261}
+      - {x: 110, y: 270}
+      - {x: 104, y: 202}
+      - {x: 113, y: 118}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      manichinoAPoseBorder_0: -1610977952
+      manichinoAPoseBorder_1: -1117066415
+      manichinoAPoseBorder_10: 1695016549
+      manichinoAPoseBorder_11: 1399517287
+      manichinoAPoseBorder_2: 1471037552
+      manichinoAPoseBorder_3: -569096078
+      manichinoAPoseBorder_4: -519768174
+      manichinoAPoseBorder_5: 442627578
+      manichinoAPoseBorder_6: -360247883
+      manichinoAPoseBorder_7: 1844368441
+      manichinoAPoseBorder_8: 1407500861
+      manichinoAPoseBorder_9: -617942912
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
