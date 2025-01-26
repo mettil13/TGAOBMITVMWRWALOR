@@ -1326,10 +1326,11 @@ MonoBehaviour:
   m_text: "<b>CREDITS</b>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<b>Game Designer:</b>
     \n\nThe Community\r\n\r\n\r\n\r\n<b>Programmers:</b>\r\n\r\nAndres Tommaso\r\n\nArruzzoli
     Davide\r\n\r\nChilla Salvatore\n    \nManuguerra Elan\r\n\nMariano Matilde\n\n   
-    \n\r\n<b>3D Artist:</b> \n\nModelli Edoardo\r\n\r\n\r\n\n<b>Sound Designer:</b>\r
-    \n\nAndres Tommaso\r\n\r\n\n\r\n<b>Special Thanks:</b>\r\n\r\nA special thanks
-    to the folks\r\nat BolognaNerd,\r\n\r\nTo the pizzeria and kebab shop \n\"Due
-    Fratelli\" for feeding us these\npast few days,\r\n\r\nThe kittens of StudioGattinity.\r\n\r\n\r\r\n\n\n\r\n\r\nPress\r\n\n                                        
+    \n\r\n<b>3D Artist:</b> \n\nModelli Edoardo\r\n\r\n\n<b>2D Artist:</b>\n\nManuguerra
+    Elan\n\nZaccaria Alice\n\r\n\n<b>Sound Designer:</b>\r \n\nAndres Tommaso\r\n\r\n\n\r\n<b>Special
+    Thanks:</b>\r\n\r\nA special thanks to the folks\r\nat BolognaNerd,\r\n\r\nTo
+    the pizzeria and kebab shop \n\"Due Fratelli\" for feeding us these\npast few
+    days,\r\n\r\nThe kittens of StudioGattinity.\r\n\r\n\r\r\n\n\n\r\n\r\nPress\r\n\n                                        
     <align=left><b><color=white>Esc</color></b>    or</align>\n\nto go back to menu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 24e8ad390ca78a94fac54d5251ceab42, type: 2}
