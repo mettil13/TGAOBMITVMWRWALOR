@@ -375,6 +375,7 @@ MonoBehaviour:
   pivots: {fileID: 2090893242835198347}
   displacementMultiplier: 4.2
   sizeMultiplier: 150
+  difficultyMultiplier: 1
   objectsToGenerate:
   - doNotGenerate: 1
     prefab: {fileID: 0}

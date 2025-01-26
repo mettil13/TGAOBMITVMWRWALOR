@@ -12,6 +12,9 @@ namespace proceduralGeneration
         {
             [SerializeField] public GeneratedElement prefab;
         }
+        private int numberOfElementsGenerated = 0;
+        [SerializeField] public int numberOfElementsToIncreaseDifficulty = 1;
+        [SerializeField] public int maxDifficulty = 1;
 
         [Header("Generation prefs")]
         [SerializeField] private List<ElementToGenerate> elementsToGenerate;
@@ -84,7 +87,9 @@ namespace proceduralGeneration
                 GameObject.Instantiate(elementsToGenerate[
                     Random.Range(0, elementsToGenerate.Count)
                     ].prefab.gameObject).GetComponent<GeneratedElement>();
+            numberOfElementsGenerated++;
             element.transform.parent = riverContainer;
+            element.GetComponent<GeneratedElement>().difficultyMultiplier = Mathf.Clamp(numberOfElementsGenerated / numberOfElementsToIncreaseDifficulty, 1, maxDifficulty);
             
             if (generatedElements.Count == 0)
             {

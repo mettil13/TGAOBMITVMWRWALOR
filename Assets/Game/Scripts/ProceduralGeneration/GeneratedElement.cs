@@ -38,25 +38,36 @@ namespace proceduralGeneration
         [SerializeField] private GeneratedElementTriggerForPivots pivots;
         [SerializeField] private float displacementMultiplier;
         [SerializeField] private float sizeMultiplier;
+        [SerializeField] public int difficultyMultiplier = 1;
         [SerializeField] private ObjectToGenerate[] objectsToGenerate;
 
-        private void Awake()
+        private void Start()
         {
             trigger.elementConnected = this;
             Vector3 direction = Vector3.forward;
             byte c = 0;
-            while (c < pivots.pathPoints.Length)
+            while (c < pivots.pathPoints.Length - 1)
             {
-                if (c <  pivots.pathPoints.Length - 1)
-                {
-                    direction = pivots.pathPoints[c + 1].position - pivots.pathPoints[c].position;
+                for(int i = 0; i < difficultyMultiplier; i++) {
+                    if (c < pivots.pathPoints.Length - 1)
+                    {
+                        direction = InterpolatePosition(pivots.pathPoints[c].position, pivots.pathPoints[c + 1].position, (float)(i + 1) / difficultyMultiplier) - InterpolatePosition(pivots.pathPoints[c].position, pivots.pathPoints[c + 1].position, (float)i / difficultyMultiplier);
+                    }
+                    
+                    Vector3 generationPosition = InterpolatePosition(pivots.pathPoints[c].position, pivots.pathPoints[c + 1].position, (float)i / difficultyMultiplier);
+                    byte randomObject = ((byte)Random.Range(0, objectsToGenerate.Length));
+                    objectsToGenerate[randomObject].GenerateElement(transform, generationPosition, direction, displacementMultiplier, sizeMultiplier);
                 }
-                Vector3 generationPosition = pivots.pathPoints[c].position;
-                byte randomObject = ((byte)Random.Range(0, objectsToGenerate.Length));
-                objectsToGenerate[randomObject].GenerateElement(transform, generationPosition, direction, displacementMultiplier, sizeMultiplier);
+
                 c++;
             }
         }
+
+        private Vector3 InterpolatePosition(Vector3 pos1, Vector3 pos2, float progress) { // progress must be a value between 0 and 1
+            progress = Mathf.Clamp01(progress);
+            return pos1 * (1 - progress) + pos2 * progress;
+        }
+
         public void CustomUpdate()
         {
             // custom update
