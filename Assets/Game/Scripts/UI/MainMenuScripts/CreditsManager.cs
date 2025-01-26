@@ -24,6 +24,8 @@ public class CreditsManager : MonoBehaviour
 
     void Update()
     {
+        if (textMeshPro.transform.position.y >= 5100) return;
+
         if (Input.GetKeyDown(KeyCode.Escape))
             SceneManager.LoadScene("MainMenu");
 

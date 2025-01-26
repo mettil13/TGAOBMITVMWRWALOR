@@ -671,7 +671,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258, y: -4380}
+  m_AnchoredPosition: {x: 199, y: -4551}
   m_SizeDelta: {x: 178.7116, y: 185.0222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905727251
@@ -1300,7 +1300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1183}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468274280
@@ -1323,15 +1323,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>CREDITS</b>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <b>Game
-    Designer:</b> The Community\r\n\r\n\r\n\r\n    <b>Programmers:</b>\r\n\r\n\r\n   
-    \r\nAndres Tommaso\r\n\nArruzzoli Davide\r\n\r\nChilla Salvatore\n    \nManuguerra
-    Elan\r\n\nMariano Matilde\n\n    \n\r\n\r\n    <b>3D Artist:</b> Modelli Edoardo\r\n\r\n\r\n   
-    <b>Sound Designer:</b>\r\n    Andres Tommaso\r\n\r\n\r\n    <b>Special Thanks:</b>\r\n\r\n\r\n   
-    A special thanks to the folks\r\n    at BolognaNerd,\r\n\r\n    To the pizzeria
-    and kebab shop \"Due Fratelli\" for feeding us these past few days,\r\n\r\n   
-    The kittens of StudioGattinity.\r\n\r\n\r\n\r\n\r\n\r\n\r\n    Press\r\n\n<b><color=white>Esc</color></b>   
-    or       \n        \nto go back to menu"
+  m_text: "<b>CREDITS</b>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<b>Game Designer:</b>
+    \n\nThe Community\r\n\r\n\r\n\r\n<b>Programmers:</b>\r\n\r\nAndres Tommaso\r\n\nArruzzoli
+    Davide\r\n\r\nChilla Salvatore\n    \nManuguerra Elan\r\n\nMariano Matilde\n\n   
+    \n\r\n<b>3D Artist:</b> \n\nModelli Edoardo\r\n\r\n\r\n\n<b>Sound Designer:</b>\r
+    \n\nAndres Tommaso\r\n\r\n\n\r\n<b>Special Thanks:</b>\r\n\r\nA special thanks
+    to the folks\r\nat BolognaNerd,\r\n\r\nTo the pizzeria and kebab shop \n\"Due
+    Fratelli\" for feeding us these\npast few days,\r\n\r\nThe kittens of StudioGattinity.\r\n\r\n\r\r\n\n\n\r\n\r\nPress\r\n\n                                        
+    <align=left><b><color=white>Esc</color></b>    or</align>\n\nto go back to menu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 24e8ad390ca78a94fac54d5251ceab42, type: 2}
   m_sharedMaterial: {fileID: 996682776939896093, guid: 24e8ad390ca78a94fac54d5251ceab42, type: 2}
@@ -1365,7 +1364,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1466,7 +1465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -89, y: -4380}
+  m_AnchoredPosition: {x: -148, y: -4551}
   m_SizeDelta: {x: -1485.1208, y: -848.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629542264
