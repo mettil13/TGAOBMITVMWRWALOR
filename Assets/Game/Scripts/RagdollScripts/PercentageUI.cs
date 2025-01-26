@@ -10,6 +10,7 @@ public class PercentageUI : MonoBehaviour
     void Start()
     {
         RiverGeneration.instance.playerDatas.uiPercentage = this.GetComponent<TextMeshProUGUI>();
+        RiverGeneration.instance.playerDatas.uiPercentagetmptext = this.GetComponent<TextMeshProUGUI>();
     }
 
 }

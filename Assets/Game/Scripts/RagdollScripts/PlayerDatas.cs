@@ -13,6 +13,7 @@ public class PlayerDatas : MonoBehaviour
     private float convertedParts = 0;
 
     public TextMeshProUGUI uiPercentage;
+    public TMP_Text uiPercentagetmptext;
     [SerializeField] int fontSmall;
     [SerializeField] int fontBig;
 
@@ -61,19 +62,20 @@ public class PlayerDatas : MonoBehaviour
         uiPercentage.text = showedPercentage.ToString() + "%";
 
         DOTween.Kill(this.gameObject);
-        //TweenColor();
+        TweenColor();
         TweenFontSize();
     }
 
-    //private void TweenColor() {
-    //    Sequence myColorSequence = DOTween.Sequence();
-    //    Tweener ToRed = uiPercentage.fontMaterial.DOColor(Color.red, 0.2f).SetEase(Ease.OutQuint);
-    //    Tweener ToWhite = uiPercentage.fontMaterial.DOColor(Color.white, 0.4f).SetEase(Ease.OutQuint);
+    private void TweenColor()
+    {
+        Sequence myColorSequence = DOTween.Sequence();
+        Tweener ToRed = uiPercentagetmptext.DOColor(Color.red, 0.2f).SetEase(Ease.OutQuint);
+        Tweener ToWhite = uiPercentagetmptext.DOColor(Color.white, 0.4f).SetEase(Ease.OutQuint);
 
 
-    //    myColorSequence.Append(ToRed);
-    //    myColorSequence.Append(ToWhite);
-    //}
+        myColorSequence.Append(ToRed);
+        myColorSequence.Append(ToWhite);
+    }
 
     private void TweenFontSize() {
         Sequence mySizeSequence = DOTween.Sequence();
