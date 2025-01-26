@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30743843, g: 0.6190489, b: 0.9755598, a: 1}
+  m_IndirectSpecularColor: {r: 0.29446262, g: 0.6078716, b: 0.9772857, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -564,6 +564,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2133324182}
     m_Modifications:
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.g
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0
@@ -690,6 +702,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8306406968361275112, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
   m_PrefabInstance: {fileID: 262145853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &262145855 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+  m_PrefabInstance: {fileID: 262145853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &278346191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4023,6 +4046,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2133324182}
     m_Modifications:
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.g
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0
@@ -4149,6 +4184,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8306406968361275112, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
   m_PrefabInstance: {fileID: 2025654912}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2025654914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+  m_PrefabInstance: {fileID: 2025654912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2133324181
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,13 +4503,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2133324182}
     m_Modifications:
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.g
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: onHoverColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: buttons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 6138020951035183466}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 262145855}
+    - target: {fileID: 2922075551422095128, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+      propertyPath: buttons.Array.data[2]
+      value: 
+      objectReference: {fileID: 2025654914}
     - target: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.89192975
+      value: 0.8901961
       objectReference: {fileID: 0}
     - target: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
@@ -4578,6 +4652,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+--- !u!114 &6138020951035183466 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4133674776189220322, guid: 8a7cd6aa4c7568644ad31f0db811602f, type: 3}
+  m_PrefabInstance: {fileID: 6138020951035183465}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183511148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7372024031670822317
 Transform:
   m_ObjectHideFlags: 0
