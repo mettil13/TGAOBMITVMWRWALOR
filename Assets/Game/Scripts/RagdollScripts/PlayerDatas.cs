@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerDatas : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class PlayerDatas : MonoBehaviour
     [SerializeField] int fontBig;
 
     [SerializeField] AnimationCurve curveFont;
+
+    public UnityEvent<string, float> damageTaken = new UnityEvent<string, float>();
 
     void Start()
     {
@@ -93,12 +96,13 @@ public class PlayerDatas : MonoBehaviour
         mySizeSequence.Append(ToSmall);
     }
 
-    public void TakeDamage(int damage) {
+    public void TakeDamage(int damage, RagdollDamageCollider bodyPart) {
         float convertedDamage = damage / convertedParts;
         //if (convertedDamage < 1) return;
         convertedDamage = Mathf.Clamp(convertedDamage, 1, 5);
         damagePercentage = Mathf.Clamp(damagePercentage + convertedDamage, 0,100);
         UpdateUIText();
+        damageTaken.Invoke(bodyPart.gameObject.name, convertedDamage);
         if(damagePercentage >= 100) {
             uiPercentagetmptext.color = Color.red;
             foreach (var part in bodyParts) {

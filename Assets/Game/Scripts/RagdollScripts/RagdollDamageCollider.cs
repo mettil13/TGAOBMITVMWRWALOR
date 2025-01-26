@@ -31,7 +31,7 @@ public class RagdollDamageCollider : MonoBehaviour
 
         StartCoroutine(SetImmunity(.3f));
 
-        playerDatas.TakeDamage((int)(Mathf.Clamp(impact,10,20)));
+        playerDatas.TakeDamage((int)(Mathf.Clamp(impact,10,20)), this);
 
         partPercentage = Mathf.Clamp(partPercentage + impact, 0, 100);
 
