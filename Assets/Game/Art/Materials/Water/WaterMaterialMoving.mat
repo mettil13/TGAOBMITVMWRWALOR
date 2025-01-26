@@ -99,10 +99,10 @@ Material:
     - _edgeIn: 1.06
     - _edgeOut: 0.05
     m_Colors:
-    - _FoamColor: {r: 0.1254902, g: 0.27993795, b: 0.46226418, a: 1}
+    - _FoamColor: {r: 0.06666667, g: 0.07450981, b: 0.105882354, a: 1}
     - _MainColor: {r: 0.33409125, g: 0.34626284, b: 0.3962264, a: 0.89411765}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _SecondaryColor: {r: 0.07058823, g: 0.599621, b: 1, a: 0.9019608}
+    - _SecondaryColor: {r: 0.16518332, g: 0.2712709, b: 0.3773585, a: 0.9019608}
     - _TILE: {r: 400, g: 400, b: 0, a: 0}
     - _TextureMoveIntensity: {r: 1.28, g: 1.23, b: 0, a: 0}
     - _TextureTiling: {r: -19.09, g: -19.09, b: 0, a: 0}
