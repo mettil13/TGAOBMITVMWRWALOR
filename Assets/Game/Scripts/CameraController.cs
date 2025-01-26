@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 desiredOffset =Quaternion.FromToRotation(Vector3.forward, RiverGeneration.instance.playerBuoiancy.flowDirection) * startOffset;
+        Vector3 desiredOffset =Quaternion.LookRotation(RiverGeneration.instance.playerBuoiancy.flowDirection, Vector3.up) * startOffset;
 
         lastOffset = Vector3.Slerp(lastOffset, desiredOffset, Time.deltaTime * lerpSpeed);
 
