@@ -75,6 +75,7 @@ public class PlayerDatas : MonoBehaviour
 
         myColorSequence.Append(ToRed);
         myColorSequence.Append(ToWhite);
+
     }
 
     private void TweenFontSize() {
@@ -93,9 +94,17 @@ public class PlayerDatas : MonoBehaviour
     }
 
     public void TakeDamage(int damage) {
-        damagePercentage = Mathf.Clamp(damagePercentage + damage/convertedParts,0,100);
+        float convertedDamage = damage / convertedParts;
+        //if (convertedDamage < 1) return;
+        convertedDamage = Mathf.Clamp(convertedDamage, 1, 5);
+        damagePercentage = Mathf.Clamp(damagePercentage + convertedDamage, 0,100);
         UpdateUIText();
         if(damagePercentage >= 100) {
+            uiPercentagetmptext.color = Color.red;
+            foreach (var part in bodyParts) {
+                part.SetPartDead();
+
+            }
             PagesManager.instance.OpenPage(Pages.Lose.ToString());
         }
     }

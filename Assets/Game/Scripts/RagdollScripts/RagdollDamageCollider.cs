@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RagdollDamageCollider : MonoBehaviour
 {
@@ -25,12 +26,12 @@ public class RagdollDamageCollider : MonoBehaviour
         if (collision.gameObject.layer == 3) return;
         if (isImmune) return;
 
-        float impact = Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z)/1.5f;
+        float impact = (Mathf.Abs(collision.relativeVelocity.x) + Mathf.Abs(collision.relativeVelocity.y) + Mathf.Abs(collision.relativeVelocity.z)) * importance/1.3f;
         if (impact <= 10f) return;
 
         StartCoroutine(SetImmunity(.3f));
 
-        playerDatas.TakeDamage((int)(Mathf.Clamp(impact * importance,10,20)));
+        playerDatas.TakeDamage((int)(Mathf.Clamp(impact,10,20)));
 
         partPercentage = Mathf.Clamp(partPercentage + impact, 0, 100);
 
@@ -64,5 +65,14 @@ public class RagdollDamageCollider : MonoBehaviour
         isImmune = true;
         yield return new WaitForSeconds(time);
         isImmune = false;
+    }
+
+    public void SetPartDead()
+    {
+        partPercentage = 100;
+        foreach (var renderer in meshRenderers)
+        {
+            renderer.material.SetFloat("_DamageColorPercentage", 1);
+        }
     }
 }

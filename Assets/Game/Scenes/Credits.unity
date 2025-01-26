@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1325,17 +1325,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<b>CREDITS</b>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <b>Game
     Designer:</b> The Community\r\n\r\n\r\n\r\n    <b>Programmers:</b>\r\n\r\n\r\n   
-    \r\nAndres Tommaso\r\n\nArruzzoli Davide\r\n\r    \nChilla\r Salvatore\r\n   
-    \nManuguerra Elan\r\n\r\nMariano\r Matilde\n\r\n    \n\r\n\r\n    <b>3D Artist:</b>
-    Modelli Edoardo\r\n\r\n\r\n    <b>Sound Designer:</b>\r\n    Andres Tommaso\r\n\r\n\r\n   
-    <b>Special Thanks:</b>\r\n\r\n\r\n    A special thanks to the folks\r\n    at
-    BolognaNerd,\r\n\r\n    To the pizzeria and kebab shops \"Due Fratelli\" and
-    \"Tre\r\n    Fratelli\" for feeding us these past few days,\r\n\r\n    The kittens
-    of StudioGattinity.\r\n\r\n\r\n\r\n\r\n\r\n\r\n    Press\r\n\n<b><color=white>Esc</color></b>   
+    \r\nAndres Tommaso\r\n\nArruzzoli Davide\r\n\r\nChilla Salvatore\n    \nManuguerra
+    Elan\r\n\nMariano Matilde\n\n    \n\r\n\r\n    <b>3D Artist:</b> Modelli Edoardo\r\n\r\n\r\n   
+    <b>Sound Designer:</b>\r\n    Andres Tommaso\r\n\r\n\r\n    <b>Special Thanks:</b>\r\n\r\n\r\n   
+    A special thanks to the folks\r\n    at BolognaNerd,\r\n\r\n    To the pizzeria
+    and kebab shop \"Due Fratelli\" for feeding us these past few days,\r\n\r\n   
+    The kittens of StudioGattinity.\r\n\r\n\r\n\r\n\r\n\r\n\r\n    Press\r\n\n<b><color=white>Esc</color></b>   
     or       \n        \nto go back to menu"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1cadb9a8e69119045bb6b54a6ff67cca, type: 2}
-  m_sharedMaterial: {fileID: 996682776939896093, guid: 1cadb9a8e69119045bb6b54a6ff67cca, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 24e8ad390ca78a94fac54d5251ceab42, type: 2}
+  m_sharedMaterial: {fileID: 996682776939896093, guid: 24e8ad390ca78a94fac54d5251ceab42, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
