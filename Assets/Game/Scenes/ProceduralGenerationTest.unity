@@ -2123,7 +2123,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2501c42f99dd44b84b11d9a9884609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyParts: []
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  bodyParts:
+  - {fileID: 1647848988}
+  - {fileID: 1492301722}
+  - {fileID: 116387889}
+  - {fileID: 644055664}
+  - {fileID: 1463743049}
+  - {fileID: 1319364049}
+  - {fileID: 1514844295}
+  - {fileID: 651812405}
+  - {fileID: 299934626}
+  - {fileID: 569737606}
+  - {fileID: 1688385171}
+  fadeDuration: 2
 --- !u!1 &701554848
 GameObject:
   m_ObjectHideFlags: 0
