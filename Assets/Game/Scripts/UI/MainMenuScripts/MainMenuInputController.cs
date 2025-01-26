@@ -1,19 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CreditsInputController : MonoBehaviour
 {
-    [SerializeField] private Button[] MainMenuButtons;
+    [SerializeField] private List<Button> MainMenuButtons = new();
 
-    private Button[] currentButtons;
-    private int currentIndex = 0;
+    public int currentIndex = 0;
 
     private void Start()
     {
-        // Inizializza currentButtons con MainMenuButtons
-        currentButtons = MainMenuButtons;
-
-        if (currentButtons != null && currentButtons.Length > 0)
+        if (MainMenuButtons != null && MainMenuButtons.Count > 0)
         {
             UpdateButtonSelection();
         }
@@ -21,37 +18,36 @@ public class CreditsInputController : MonoBehaviour
 
     public void OnUp()
     {
-        Debug.Log("su");
-        if (currentButtons == null || currentButtons.Length == 0) return;
+        if (MainMenuButtons == null) return;
 
-        currentIndex = (currentIndex - 1 + currentButtons.Length) % currentButtons.Length;
+        currentIndex = (currentIndex - 1 + MainMenuButtons.Count) % MainMenuButtons.Count;
         UpdateButtonSelection();
     }
 
     public void OnDown()
     {
-        if (currentButtons == null || currentButtons.Length == 0) return;
+        if (MainMenuButtons == null) return;
 
-        currentIndex = (currentIndex + 1) % currentButtons.Length;
+        currentIndex = (currentIndex + 1) % MainMenuButtons.Count;
         UpdateButtonSelection();
     }
 
     public void OnConfirm()
     {
-        if (currentButtons == null || currentButtons.Length == 0) return;
+        if (MainMenuButtons == null || MainMenuButtons.Count == 0) return;
 
-        currentButtons[currentIndex].onClick.Invoke();
+        MainMenuButtons[currentIndex].onClick.Invoke();
     }
 
 
 
     private void UpdateButtonSelection()
     {
-        if (currentButtons == null || currentButtons.Length == 0) return;
+        if (MainMenuButtons == null || MainMenuButtons.Count == 0) return;
 
-        for (int i = 0; i < currentButtons.Length; i++)
+        for (int i = 0; i < MainMenuButtons.Count; i++)
         {
-            var button = currentButtons[i];
+            var button = MainMenuButtons[i];
             var colors = button.colors;
 
             if (i == currentIndex)
