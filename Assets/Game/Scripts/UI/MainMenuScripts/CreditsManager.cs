@@ -24,11 +24,12 @@ public class CreditsManager : MonoBehaviour
 
     void Update()
     {
-        if (textMeshPro.transform.position.y >= 5100) return;
 
         if (Input.GetKeyDown(KeyCode.Escape))
             SceneManager.LoadScene("MainMenu");
 
+        if (textMeshPro.transform.position.y >= 5600) return;
+        
         if (autoScroll && contentRect != null)
         {
             textMeshPro.transform.position += new Vector3(0, .8f, 0) * Time.deltaTime * 200;
